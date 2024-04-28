@@ -10,6 +10,42 @@
     <script src="script.js"></script>
   </head>
   <body>
-    <h1>Dashboard - RBAC</h1>
+    <header>
+      <div class="header-content">
+          <div class="logo">
+              <img src="logo.png" alt="Logo" width="200">
+          </div>
+          <div class="menu">
+              <nav>
+                  <ul>
+                      <li onclick="toggleSubMenu()">Sobre
+                          <ul class="submenu" id="submenu">
+                              <li>Sobre a RBAC</li>
+                              <li>Sobre a Aprendizagem Criativa</li>
+                              <li>Apoie a RBAC</li>
+                              <li>Nosso Manifesto</li>
+                          </ul>
+                      </li>
+                      <li>Comunidade</li>
+                      <li>Iniciativas</li>
+                      <li>Mural de Coleções Formativas</li>
+                      <li>Estúdio Pedagógico</li>
+                      <li>Biblioteca</li>
+                      <li>Novidades</li>
+                  </ul>
+              </nav>
+          </div>
+          <div class="buttons">
+              <button class="button">Faça parte da nossa rede</button>
+              <button class="button">Entrar</button>
+          </div>
+      </div>
+  </header>
+  <script>
+    function toggleSubMenu() {
+        var submenu = document.getElementById("submenu");
+        submenu.classList.toggle("show");
+    }
+</script>
   </body>
 </html>
