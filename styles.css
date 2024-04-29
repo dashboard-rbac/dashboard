@@ -5,32 +5,36 @@ body {
 }
 
 header {
-    
-    color: #000000;
-    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 .header-content {
     display: flex;
     justify-content: center;
     align-items: center;
+    width: 100%;
+    height: 77px;
+    padding-bottom: 15px;
+    padding-top: 5px;
+}
+
+.logo{
+    width: auto;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: flex;
-    justify-content: center;
     align-items: center;
 }
 
 nav ul li {
-    margin: 0 10px;
+    padding: 10px 10px;
 }
 
 .submenu {
@@ -41,19 +45,38 @@ nav ul li {
     display: block;
 }
 
-.button {
-    background-color: #70a330;
+.button-us{
+    background-color: #8cc740;
     border: none;
     color: white;
-    padding: 15px 32px;
+    border-radius: 5px;
+    padding: 11px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    font-weight: 700;
+    margin-left: 2.4rem;
     cursor: pointer;
 }
 
-.button:hover {
-    background-color: #45a049;
+.button-enter {
+    background-color: #fff;
+    border: 1px solid #8cc740; 
+    color: #8cc740;
+    border-radius: 5px;
+    padding: 9px 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 9px;
+    cursor: pointer;
+}
+
+.button-us:hover,
+.button-enter:hover {
+    background-color: #70a330;
+    color: white;
 }
