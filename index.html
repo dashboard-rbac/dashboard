@@ -8,8 +8,50 @@
     <link rel="stylesheet" href="styles.css">
     <script src="api.js"></script>
     <script src="script.js"></script>
+    <script src="toggle-sobre.js"></script>
   </head>
   <body>
-    <h1>Dashboard - RBAC</h1>
+    <header>
+      <div id="header-content">
+          <div>
+            <img id="logo"src="logo.png" alt="Logo" >
+          </div>
+          <div>
+              <nav>
+                  <ul id="menu">
+                      <li onclick="toggleSubMenu()">Sobre<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 24 16" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
+                          <ul class="submenu" id="submenu">
+                              <li>Sobre a RBAC</li>
+                              <li>Sobre a Aprendizagem Criativa</li>
+                              <li>Apoie a RBAC</li>
+                              <li>Nosso Manifesto</li>
+                          </ul>
+                      </li>
+                      <li>Comunidade</li>
+                      <li>Iniciativas</li>
+                      <li>Mural</li>
+                      <li>Coleções Formativas</li>
+                      <li>Estúdio Pedagógico</li>
+                      <li>Biblioteca</li>
+                      <li>Novidades</li>
+                  </ul>
+              </nav>
+          </div>
+          <div id="buttons">
+              <button id="button-us">Faça parte da nossa rede</button>
+              <button id="button-enter">Entrar</button>
+          </div>
+      </div>
+  </header>
+  <section id="section">
+    <div id="section-text">
+            <p>Nesta página, você encontrará uma variedade de Dashboards informativos<br>
+            e visualmente atraentes, projetados para fornecer insights valiosos <br>
+            sobre dados relevantes para você e sua equipe. <br>
+            Explore nossos Dashboards interativos e intuitivos para tomar decisões <br>
+            informadas e impulsionar o sucesso de seus projetos e negócios.</p>
+      </div>
+  </section>
   </body>
 </html>
+
