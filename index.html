@@ -8,22 +8,22 @@
     <link rel="stylesheet" href="styles.css">
     <script src="api.js"></script>
     <script src="script.js"></script>
+    
   </head>
   <body>
     <header>
       <div class="header-content">
-          <div class="logo">
-            <img src="logo.png" alt="Logo" width="150">
-
+          <div >
+            <img id="logo"src="logo.png" alt="Logo" >
           </div>
-          <div class="menu">
+          <div>
               <nav>
-                  <ul>
+                  <ul id="menu">
                       <li onclick="toggleSubMenu()">Sobre<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 24 16" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
                           <ul class="submenu" id="submenu">
                               <li>Sobre a RBAC</li>
                               <li>Sobre a Aprendizagem Criativa</li>
-                               <li>Apoie a RBAC</li>
+                              <li>Apoie a RBAC</li>
                               <li>Nosso Manifesto</li>
                           </ul>
                       </li>
@@ -37,7 +37,7 @@
                   </ul>
               </nav>
           </div>
-          <div class="buttons">
+          <div id="buttons">
               <button class="button-us">Faça parte da nossa rede</button>
               <button class="button-enter">Entrar</button>
           </div>
@@ -46,11 +46,6 @@
   <section>
     <img src="Section Title.png" alt="dashboard">
   </section>
-  <script>
-    function toggleSubMenu() {
-        var submenu = document.getElementById("submenu");
-        submenu.classList.toggle("show");
-    }
-</script>
+  <script src="toggle-sobre.js"></script>
   </body>
 </html>
