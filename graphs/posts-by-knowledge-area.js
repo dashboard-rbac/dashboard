@@ -1,4 +1,4 @@
-var ctx = document.getElementsByClassName("line-chart");
+var ctx = document.getElementById("posts-by-knowledge-area");
 var chartGraph = new Chart(ctx, {
   type: "bar",
   data: {
