@@ -205,17 +205,17 @@ footer {
   color: #ed008c;
 }
 
-.retangulo-verde {
-    width: 300px; /* largura do retângulo */
-    height: 40px; /* altura do retângulo */
-    background-color: rgb(140, 199, 64); /* cor verde */
-    border-radius: 10px; /* bordas redondas */
-    position: flex; /* posição absoluta */
-    top: 0; /* distância do topo */
-    left: 0; /* distância da esquerda */
-    color: white;
-    padding: 0px;
-    font-size: 18px;
-    text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+.graph-title-container {
+  width: 300px;
+  height: 40px;
+  background-color: rgb(140, 199, 64);
+  border-radius: 10px;
+  position: flex;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 0px;
+  font-size: 18px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 }
