@@ -4,16 +4,9 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    color: #000000;
-    background-color:  rgb(255, 255, 255);
-}
 
-.header-content {
+
+#header-content {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,6 +31,7 @@ header {
 #menu li {
     padding: 9px 9px;
     font-size: 16px;
+    cursor: pointer;
 }
 
 .submenu {
@@ -48,6 +42,7 @@ header {
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
     padding-left: 10px; 
+    cursor: pointer;
 }
 
 .submenu li {
@@ -69,7 +64,7 @@ header {
     
 }
 
-.button-us{
+#button-us{
     background-color: #8cc740;
     border: none;
     color: white;
@@ -84,7 +79,7 @@ header {
     cursor: pointer;
 }
 
-.button-enter {
+#button-enter {
     background-color: #fff;
     border: 1px solid #8cc740; 
     color: #8cc740;
@@ -99,8 +94,8 @@ header {
     cursor: pointer;
 }
 
-.button-us:hover,
-.button-enter:hover {
+#button-us:hover,
+#button-enter:hover {
     background-color: #70a330;
     color: white;
 }
