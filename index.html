@@ -5,53 +5,159 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - RBAC</title>
 
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css" />
     <script src="api.js"></script>
     <script src="script.js"></script>
-    <script src="toggle-sobre.js"></script>
+    <script
+      src="https://kit.fontawesome.com/c6cd73418f.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
     <header>
       <div id="header-content">
-          <div>
-            <img id="logo"src="logo.png" alt="Logo" >
-          </div>
-          <div>
-              <nav>
-                  <ul id="menu">
-                      <li onclick="toggleSubMenu()">Sobre<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"  viewBox="0 0 24 16" style="fill: rgba(0, 0, 0, 1);"><path d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"></path></svg>
-                          <ul class="submenu" id="submenu">
-                              <li>Sobre a RBAC</li>
-                              <li>Sobre a Aprendizagem Criativa</li>
-                              <li>Apoie a RBAC</li>
-                              <li>Nosso Manifesto</li>
-                          </ul>
-                      </li>
-                      <li>Comunidade</li>
-                      <li>Iniciativas</li>
-                      <li>Mural</li>
-                      <li>Coleções Formativas</li>
-                      <li>Estúdio Pedagógico</li>
-                      <li>Biblioteca</li>
-                      <li>Novidades</li>
-                  </ul>
-              </nav>
-          </div>
-          <div id="buttons">
-              <button id="button-us">Faça parte da nossa rede</button>
-              <button id="button-enter">Entrar</button>
-          </div>
+        <div>
+          <img id="logo" src="logo.png" alt="Logo" />
+        </div>
+        <div>
+          <nav>
+            <ul id="menu">
+              <li onclick="toggleSubMenu()">
+                Sobre<svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 16"
+                  style="fill: rgba(0, 0, 0, 1)"
+                >
+                  <path
+                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                  ></path>
+                </svg>
+                <ul class="submenu" id="submenu">
+                  <li>Sobre a RBAC</li>
+                  <li>Sobre a Aprendizagem Criativa</li>
+                  <li>Apoie a RBAC</li>
+                  <li>Nosso Manifesto</li>
+                </ul>
+              </li>
+              <li>Comunidade</li>
+              <li>Iniciativas</li>
+              <li>Mural</li>
+              <li>Coleções Formativas</li>
+              <li>Estúdio Pedagógico</li>
+              <li>Biblioteca</li>
+              <li>Novidades</li>
+            </ul>
+          </nav>
+        </div>
+        <div id="buttons">
+          <button id="button-us">Faça parte da nossa rede</button>
+          <button id="button-enter">Entrar</button>
+        </div>
       </div>
-  </header>
-  <section id="section">
-    <div id="section-text">
-            <p>Nesta página, você encontrará uma variedade de Dashboards informativos<br>
-            e visualmente atraentes, projetados para fornecer insights valiosos <br>
-            sobre dados relevantes para você e sua equipe. <br>
-            Explore nossos Dashboards interativos e intuitivos para tomar decisões <br>
-            informadas e impulsionar o sucesso de seus projetos e negócios.</p>
+    </header>
+    <section id="section">
+      <div id="section-text">
+        <p>
+          Nesta página, você encontrará uma variedade de Dashboards
+          informativos<br />
+          e visualmente atraentes, projetados para fornecer insights valiosos
+          <br />
+          sobre dados relevantes para você e sua equipe. <br />
+          Explore nossos Dashboards interativos e intuitivos para tomar decisões
+          <br />
+          informadas e impulsionar o sucesso de seus projetos e negócios.
+        </p>
       </div>
-  </section>
+    </section>
+
+    <footer>
+      <div id="footer-menu">
+        <ul id="footer-menu-links">
+          <li>
+            <a href="https://aprendizagemcriativa.org/comunidade">Comunidade</a>
+          </li>
+          <li><a href="#">Iniciativas</a></li>
+          <li>
+            <a href="https://aprendizagemcriativa.org/colecoes-formativas"
+              >Coleções Formativas</a
+            >
+          </li>
+          <li><a href="https://aprendizagemcriativa.org/mural">Mural</a></li>
+          <li>
+            <a href="https://aprendizagemcriativa.org/estudio-pedagogico"
+              >Estúdio Pedagógico</a
+            >
+          </li>
+          <li>
+            <a href="https://aprendizagemcriativa.org/novidades">Novidades</a>
+          </li>
+        </ul>
+        <ul id="social-media-links">
+          <li>
+            <a href="https://www.facebook.com/aprendizagemcriativabr"
+              ><i class="fa-brands fa-square-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/aprendizagemcriativabrasil/"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/company/aprendizagemcriativa/"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.youtube.com/c/RedeBrasileiradeAprendizagemCriativa"
+              ><i class="fa-brands fa-youtube"></i
+            ></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/RedeBdeAC"
+              ><i class="fa-brands fa-square-twitter"></i
+            ></a>
+          </li>
+        </ul>
+      </div>
+      <div id="black-footer" style="background-color: black">
+        <img
+          id="footer-logo-rbac"
+          src="images/footer_logo.png"
+          alt="Logo Aprendizagem Criativa"
+        />
+        <div id="black-footer-text">
+          Somos um movimento que une educadores, artistas, pais, pesquisadores,
+          empreendedores, estudantes e organizações para promover e apoiar
+          práticas educacionais mão na massa, criativas, relevantes e inclusivas
+          por todo o Brasil.
+        </div>
+        <img
+          id="footer-fundacao"
+          src="images/lemann_1.png"
+          alt="Fundação Lemann"
+        />
+        <img id="footer-mit" src="images/mit.png" alt="Mit Media Lab" />
+      </div>
+      <div id="footer-information">
+        Rede Brasileira de Aprendizagem Criativa - Todos os direitos reservados
+        -
+        <a href="https://aprendizagemcriativa.org/termos-de-uso"
+          >&nbspTermos de uso&nbsp</a
+        >
+        -
+        <a href="https://aprendizagemcriativa.org/politica-de-privacidade"
+          >&nbspPolítica de Privacidade&nbsp</a
+        >
+        -
+        <a href="https://aprendizagemcriativa.org/diretrizes-da-comunidade"
+          >&nbspDiretrizes da Comunidade&nbsp</a
+        >
+        - <a href="https://aprendizagemcriativa.org/contato">&nbspContato</a>
+      </div>
+    </footer>
   </body>
 </html>
-
