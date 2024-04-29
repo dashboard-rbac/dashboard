@@ -12,6 +12,13 @@
       src="https://kit.fontawesome.com/c6cd73418f.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
+      integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
   </head>
   <body>
     <header>
@@ -71,7 +78,13 @@
         </p>
       </div>
     </section>
-    <footer id="footer-container">
+
+    <div class="graph-title-container">
+      Quantidade de postagens por área de conhecimento
+    </div>
+    <canvas id="posts-by-knowledge-area" class="line-chart" width="60%" height="25%"></canvas>
+
+    <footer>
       <div id="footer-menu">
         <ul id="footer-menu-links">
           <li>
@@ -158,5 +171,7 @@
         - <a href="https://aprendizagemcriativa.org/contato">&nbspContato</a>
       </div>
     </footer>
+
+    <script src="graphs/posts-by-knowledge-area.js"></script>
   </body>
 </html>
