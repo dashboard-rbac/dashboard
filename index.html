@@ -30,7 +30,8 @@
           <nav>
             <ul id="menu">
               <li onclick="toggleSubMenu()">
-                Sobre<svg
+                Sobre
+                <svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="16"
                   height="16"
@@ -67,11 +68,12 @@
     <section id="section">
       <div id="section-text">
         <p>
-          Nesta página, você encontrará uma variedade de Dashboards
-          informativos<br />
+          Nesta página, você encontrará uma variedade de Dashboards informativos
+          <br />
           e visualmente atraentes, projetados para fornecer insights valiosos
           <br />
-          sobre dados relevantes para você e sua equipe. <br />
+          sobre dados relevantes para você e sua equipe.
+          <br />
           Explore nossos Dashboards interativos e intuitivos para tomar decisões
           <br />
           informadas e impulsionar o sucesso de seus projetos e negócios.
@@ -79,10 +81,17 @@
       </div>
     </section>
 
-    <div class="graph-title-container">
-      Quantidade de postagens por área de conhecimento
+    <div>
+      <div class="graph-title-container">
+        Quantidade de postagens por área de conhecimento
+      </div>
+      <canvas
+        id="posts-by-knowledge-area"
+        class="line-chart"
+        width="60%"
+        height="25%"
+      ></canvas>
     </div>
-    <canvas id="posts-by-knowledge-area" class="line-chart" width="60%" height="25%"></canvas>
 
     <footer>
       <div id="footer-menu">
@@ -90,17 +99,21 @@
           <li>
             <a href="https://aprendizagemcriativa.org/comunidade">Comunidade</a>
           </li>
-          <li><a href="#">Iniciativas</a></li>
           <li>
-            <a href="https://aprendizagemcriativa.org/colecoes-formativas"
-              >Coleções Formativas</a
-            >
+            <a href="https://aprendizagemcriativa.org/iniciativas-da-rbac">
+              Iniciativas
+            </a>
+          </li>
+          <li>
+            <a href="https://aprendizagemcriativa.org/colecoes-formativas">
+              Coleções Formativas
+            </a>
           </li>
           <li><a href="https://aprendizagemcriativa.org/mural">Mural</a></li>
           <li>
-            <a href="https://aprendizagemcriativa.org/estudio-pedagogico"
-              >Estúdio Pedagógico</a
-            >
+            <a href="https://aprendizagemcriativa.org/estudio-pedagogico">
+              Estúdio Pedagógico
+            </a>
           </li>
           <li>
             <a href="https://aprendizagemcriativa.org/novidades">Novidades</a>
@@ -108,30 +121,31 @@
         </ul>
         <ul id="social-media-links">
           <li>
-            <a href="https://www.facebook.com/aprendizagemcriativabr"
-              ><i class="fa-brands fa-square-facebook"></i
-            ></a>
+            <a href="https://www.facebook.com/aprendizagemcriativabr">
+              <i class="fa-brands fa-square-facebook"></i>
+            </a>
           </li>
           <li>
-            <a href="https://www.instagram.com/aprendizagemcriativabrasil/"
-              ><i class="fa-brands fa-instagram"></i
-            ></a>
+            <a href="https://www.instagram.com/aprendizagemcriativabrasil/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
           </li>
           <li>
-            <a href="https://www.linkedin.com/company/aprendizagemcriativa/"
-              ><i class="fa-brands fa-linkedin"></i
-            ></a>
+            <a href="https://www.linkedin.com/company/aprendizagemcriativa/">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
           </li>
           <li>
             <a
               href="https://www.youtube.com/c/RedeBrasileiradeAprendizagemCriativa"
-              ><i class="fa-brands fa-youtube"></i
-            ></a>
+            >
+              <i class="fa-brands fa-youtube"></i>
+            </a>
           </li>
           <li>
-            <a href="https://twitter.com/RedeBdeAC"
-              ><i class="fa-brands fa-square-twitter"></i
-            ></a>
+            <a href="https://twitter.com/RedeBdeAC">
+              <i class="fa-brands fa-square-twitter"></i>
+            </a>
           </li>
         </ul>
       </div>
@@ -157,18 +171,19 @@
       <div id="footer-information">
         Rede Brasileira de Aprendizagem Criativa - Todos os direitos reservados
         -
-        <a href="https://aprendizagemcriativa.org/termos-de-uso"
-          >&nbspTermos de uso&nbsp</a
-        >
+        <a href="https://aprendizagemcriativa.org/termos-de-uso">
+          &nbspTermos de uso&nbsp
+        </a>
         -
-        <a href="https://aprendizagemcriativa.org/politica-de-privacidade"
-          >&nbspPolítica de Privacidade&nbsp</a
-        >
+        <a href="https://aprendizagemcriativa.org/politica-de-privacidade">
+          &nbspPolítica de Privacidade&nbsp
+        </a>
         -
-        <a href="https://aprendizagemcriativa.org/diretrizes-da-comunidade"
-          >&nbspDiretrizes da Comunidade&nbsp</a
-        >
-        - <a href="https://aprendizagemcriativa.org/contato">&nbspContato</a>
+        <a href="https://aprendizagemcriativa.org/diretrizes-da-comunidade">
+          &nbspDiretrizes da Comunidade&nbsp
+        </a>
+        -
+        <a href="https://aprendizagemcriativa.org/contato">&nbspContato</a>
       </div>
     </footer>
 
