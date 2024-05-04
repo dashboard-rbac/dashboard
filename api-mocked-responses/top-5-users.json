@@ -1,0 +1,47 @@
+[
+  {
+    "name": "Thiago",
+    "area": "IT",
+    "occupation": "Programmer",
+    "city": "Valinhos",
+    "state": "São Paulo",
+    "country": "Brasil",
+    "group": "Núcleo Região Metropolitana de Campinas - RMC"
+  },
+  {
+    "name": "Bruno",
+    "area": "IT",
+    "occupation": "Programmer",
+    "city": "Curitiba",
+    "state": "Paraná",
+    "country": "Brasil",
+    "group": "Escola Municipal Arapongas"
+  },
+  {
+    "name": "Luciano",
+    "area": "TV",
+    "occupation": "Host",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
+    "country": "Brasil",
+    "group": "E. M. Francisco Portugal Neves"
+  },
+  {
+    "name": "William",
+    "area": "Music",
+    "occupation": "Composer",
+    "city": "Newcastle upon Tyne",
+    "state": "North East",
+    "country": "England",
+    "group": "England Region Core"
+  },
+  {
+    "name": "Caio",
+    "area": "TV",
+    "occupation": "Actor",
+    "city": "Manaus",
+    "state": "Amazônia",
+    "country": "Brasil",
+    "group": "Escola Sesi Dra Emina Barbosa Mustafa"
+  }
+]

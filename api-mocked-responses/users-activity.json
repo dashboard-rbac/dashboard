@@ -1,0 +1,98 @@
+[
+  {
+    "date": "Janeiro - 2023",
+    "comments": 500,
+    "likes": 2000,
+    "posts": 100
+  },
+  {
+    "date": "Fevereiro - 2023",
+    "comments": 800,
+    "likes": 3500,
+    "posts": 200
+  },
+  {
+    "date": "Março - 2023",
+    "comments": 1500,
+    "likes": 5000,
+    "posts": 300
+  },
+  {
+    "date": "Abril - 2023",
+    "comments": 2000,
+    "likes": 7000,
+    "posts": 400
+  },
+  {
+    "date": "Maio - 2023",
+    "comments": 2500,
+    "likes": 9000,
+    "posts": 500
+  },
+  {
+    "date": "Junho - 2023",
+    "comments": 3000,
+    "likes": 11000,
+    "posts": 600
+  },
+  {
+    "date": "Julho - 2023",
+    "comments": 3500,
+    "likes": 13000,
+    "posts": 700
+  },
+  {
+    "date": "Agosto - 2023",
+    "comments": 4000,
+    "likes": 15000,
+    "posts": 800
+  },
+  {
+    "date": "Setembro - 2023",
+    "comments": 4500,
+    "likes": 17000,
+    "posts": 900
+  },
+  {
+    "date": "Outubro - 2023",
+    "comments": 5000,
+    "likes": 19000,
+    "posts": 1000
+  },
+  {
+    "date": "Novembro - 2023",
+    "comments": 5500,
+    "likes": 21000,
+    "posts": 1100
+  },
+  {
+    "date": "Dezembro - 2023",
+    "comments": 6000,
+    "likes": 23000,
+    "posts": 1200
+  },
+  {
+    "date": "Janeiro - 2024",
+    "comments": 200,
+    "likes": 300,
+    "posts": 0
+  },
+  {
+    "date": "Fevereiro - 2024",
+    "comments": 500,
+    "likes": 1000,
+    "posts": 100
+  },
+  {
+    "date": "Março - 2024",
+    "comments": 1000,
+    "likes": 2000,
+    "posts": 200
+  },
+  {
+    "date": "Abril - 2024",
+    "comments": 1200,
+    "likes": 2500,
+    "posts": 300
+  }
+]

@@ -1,0 +1,66 @@
+[
+  {
+    "date": "Janeiro - 2023",
+    "users": 1000
+  },
+  {
+    "date": "Fevereiro - 2023",
+    "users": 1200
+  },
+  {
+    "date": "Março - 2023",
+    "users": 1500
+  },
+  {
+    "date": "Abril - 2023",
+    "users": 1800
+  },
+  {
+    "date": "Maio - 2023",
+    "users": 2100
+  },
+  {
+    "date": "Junho - 2023",
+    "users": 2400
+  },
+  {
+    "date": "Julho - 2023",
+    "users": 2700
+  },
+  {
+    "date": "Agosto - 2023",
+    "users": 3000
+  },
+  {
+    "date": "Setembro - 2023",
+    "users": 3300
+  },
+  {
+    "date": "Outubro - 2023",
+    "users": 3600
+  },
+  {
+    "date": "Novembro - 2023",
+    "users": 3900
+  },
+  {
+    "date": "Dezembro - 2023",
+    "users": 4200
+  },
+  {
+    "date": "Janeiro - 2024",
+    "users": 4500
+  },
+  {
+    "date": "Fevereiro - 2024",
+    "users": 4800
+  },
+  {
+    "date": "Março - 2024",
+    "users": 5100
+  },
+  {
+    "date": "Abril - 2024",
+    "users": 5400
+  }
+]

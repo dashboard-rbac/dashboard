@@ -1,0 +1,66 @@
+[
+  {
+    "area": "Artes visuais e performáticas",
+    "posts": 300
+  },
+  {
+    "area": "Conhecimentos gerais",
+    "posts": 250
+  },
+  {
+    "area": "Língua portuguesa",
+    "posts": 180
+  },
+  {
+    "area": "Tecnologia e inovação",
+    "posts": 100
+  },
+  {
+    "area": "História",
+    "posts": 320
+  },
+  {
+    "area": "Ciências",
+    "posts": 330
+  },
+  {
+    "area": "Geografia",
+    "posts": 50
+  },
+  {
+    "area": "Matemática",
+    "posts": 600
+  },
+  {
+    "area": "Física",
+    "posts": 550
+  },
+  {
+    "area": "Sociologia",
+    "posts": 200
+  },
+  {
+    "area": "Biologia",
+    "posts": 100
+  },
+  {
+    "area": "Filosofia",
+    "posts": 30
+  },
+  {
+    "area": "Química",
+    "posts": 430
+  },
+  {
+    "area": "Educação física",
+    "posts": 165
+  },
+  {
+    "area": "Ensino religioso",
+    "posts": 20
+  },
+  {
+    "area": "Outros",
+    "posts": 899
+  }
+]
