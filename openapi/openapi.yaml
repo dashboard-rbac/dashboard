@@ -1,0 +1,134 @@
+openapi: 3.0.0
+info:
+  title: Dashboard RBAC
+  description: This openapi specification describes the API used to provide data for the dashboard.
+  version: 1.0.0
+servers:
+  - url: http://{{baseurl}}
+paths:
+  /users-activity:
+    get:
+      tags:
+        - default
+      summary: List users activity
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UsersActivity"
+  /posts-by-knowledge-area:
+    get:
+      tags:
+        - default
+      summary: Posts by knowledge area
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/PostsByKnowledgeArea"
+  /groups-evolution:
+    get:
+      tags:
+        - default
+      summary: Groups evolution
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GroupsEvolution"
+  /users-evolution:
+    get:
+      tags:
+        - default
+      summary: Users evolution
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UsersEvolution"
+  /top5-users:
+    get:
+      tags:
+        - default
+      summary: Top 5 users
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Top5Users"
+
+components:
+  schemas:
+    UsersActivity:
+      type: array
+      items:
+        type: object
+        properties:
+          date:
+            type: string
+          comments:
+            type: integer
+          likes:
+            type: integer
+          posts:
+            type: integer
+
+    PostsByKnowledgeArea:
+      type: array
+      items:
+        type: object
+        properties:
+          area:
+            type: string
+          posts:
+            type: integer
+
+    GroupsEvolution:
+      type: array
+      items:
+        type: object
+        properties:
+          date:
+            type: string
+          groups:
+            type: integer
+
+    UsersEvolution:
+      type: array
+      items:
+        type: object
+        properties:
+          date:
+            type: string
+          users:
+            type: integer
+
+    Top5Users:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+          area:
+            type: string
+          occupation:
+            type: string
+          city:
+            type: string
+          state:
+            type: string
+          country:
+            type: string
+          group:
+            type: string
