@@ -83,6 +83,24 @@
 
     <div>
       <div class="graph-title-container">
+        Usuários que mais interagem e postam no blog
+      </div>
+      <table id="table-top-5-people">
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Área de Atuação</th>
+            <th>Ocupação</th>
+            <th>Localização</th>
+            <th>Núcleo RBAC</th>
+          </tr>
+        </thead>
+        <tbody id="table-top-5-people-content"></tbody>
+      </table>
+    </div>
+
+    <div>
+      <div class="graph-title-container">
         Quantidade de postagens por área de conhecimento
       </div>
       <canvas
@@ -211,6 +229,7 @@
       </div>
     </footer>
 
+    <script src="graphs/top-5-users.js"></script>
     <script src="graphs/posts-by-knowledge-area.js"></script>
     <script src="graphs/group-evolution-members.js"></script>
     <script src="graphs/user-activity.js"></script>
