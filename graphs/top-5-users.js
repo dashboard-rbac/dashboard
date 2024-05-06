@@ -66,7 +66,12 @@ const people = [
 
 const tbody = document.getElementById("table-top-5-people-content");
 
-function updateTable() {
+async function getTableData() {
+  getTop5Evolution
+}
+
+function buildTable() {
+  getTableData();
   people.sort((a, b) =>
     a.numberOfInteractions + a.numberOfPosts >
     b.numberOfInteractions + b.numberOfPosts
@@ -102,4 +107,4 @@ function formatText(text) {
   }
 }
 
-updateTable();
+buildTable();
