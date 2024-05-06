@@ -31,6 +31,11 @@
   padding-right: 15px;
 }
 
+#menu a {
+  text-decoration: none;
+  color: black;
+}
+
 #menu li {
   padding: 9px 9px;
   font-size: 16px;
@@ -64,6 +69,10 @@
   border-width: 10px;
   border-style: solid;
   border-color: transparent transparent rgba(250, 250, 250, 1) transparent;
+}
+
+#buttons a{
+  text-decoration: none;
 }
 
 #button-us {
