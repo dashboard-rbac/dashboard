@@ -6,18 +6,13 @@
     <title>Dashboard - RBAC</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <script src="api.js"></script>
-    <script src="script.js"></script>
     <script
       src="https://kit.fontawesome.com/c6cd73418f.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.min.js"
-      integrity="sha512-L0Shl7nXXzIlBSUUPpxrokqq4ojqgZFQczTYlGjzONGTDAcLremjwaWv5A+EDLnxhQzY5xUZPWLOLqYRkY0Cbw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
     ></script>
   </head>
   <body>
@@ -165,7 +160,7 @@
         Evolução da Quantidade de Grupos e Quantidade de Membros
       </div>
       <canvas
-        id="group-evolution-members"
+        id="group-and-users-evolution"
         class="line-chart"
         width="60%"
         height="25%"
@@ -278,9 +273,11 @@
       </div>
     </footer>
 
+    <script src="script.js"></script>
+    <script src="api.js"></script>
     <script src="graphs/top-5-users.js"></script>
     <script src="graphs/posts-by-knowledge-area.js"></script>
-    <script src="graphs/group-evolution-members.js"></script>
+    <script src="graphs/group-and-users-evolution.js"></script>
     <script src="graphs/user-activity.js"></script>
   </body>
 </html>
