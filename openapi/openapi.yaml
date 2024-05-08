@@ -35,6 +35,7 @@ paths:
       tags:
         - default
       summary: Groups evolution
+      deprecated: true
       responses:
         "200":
           description: Successful response
@@ -47,6 +48,7 @@ paths:
       tags:
         - default
       summary: Users evolution
+      deprecated: true
       responses:
         "200":
           description: Successful response
@@ -66,6 +68,42 @@ paths:
             application/json:
               schema:
                 $ref: "#/components/schemas/Top5Users"
+  /groups-and-users-evolution:
+    get:
+      tags:
+        - default
+      summary: Groups and Users evolution
+      responses:
+        "200":
+          description: Resposta bem-sucedida
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/GroupsAndUsersEvolution"
+  /users-count-by-state:
+    get:
+      tags:
+        - default
+      summary: Users count by state
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/UsersCountByState"
+  /groups:
+    get:
+      tags:
+        - default
+      summary: List groups
+      responses:
+        "200":
+          description: Successful response
+          content:
+            application/json:
+              schema:
+                $ref: "#/components/schemas/Groups"
 
 components:
   schemas:
@@ -132,3 +170,43 @@ components:
             type: string
           group:
             type: string
+
+    GroupsAndUsersEvolution:
+      type: array
+      items:
+        type: object
+        properties:
+          date:
+            type: string
+          groups:
+            type: integer
+          users:
+            type: integer
+    
+    UsersCountByState:
+      type: array
+      items:
+        type: object
+        properties:
+          state:
+            type: string
+          users:
+            type: integer
+    
+    Groups:
+      type: array
+      items:
+        type: object
+        properties:
+          name:
+            type: string
+          type:
+            type: string
+          city:
+            type: string
+          state:
+            type: string
+          country:
+            type: string
+          members:
+            type: integer

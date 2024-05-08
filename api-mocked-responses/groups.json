@@ -1,0 +1,191 @@
+[
+  {
+    "name": "Instituto Educacional Acreano",
+    "type": "Instituições de Ensino",
+    "city": "Rio Branco",
+    "state": "Acre",
+    "members": 50
+  },
+  {
+    "name": "Secretaria de Educação de Alagoas",
+    "type": "Secretarias",
+    "city": "Maceió",
+    "state": "Alagoas",
+    "members": 30
+  },
+  {
+    "name": "Grupo Temático Amazônico",
+    "type": "Grupos Temáticos",
+    "city": "Macapá",
+    "state": "Amapá",
+    "members": 20
+  },
+  {
+    "name": "Núcleo Regional RBAC Amazonas",
+    "type": "Núcleos Regionais RBAC",
+    "city": "Manaus",
+    "state": "Amazonas",
+    "members": 100
+  },
+  {
+    "name": "Instituto Baiano de Ensino",
+    "type": "Instituições de Ensino",
+    "city": "Salvador",
+    "state": "Bahia",
+    "members": 80
+  },
+  {
+    "name": "Secretaria de Educação do Ceará",
+    "type": "Secretarias",
+    "city": "Fortaleza",
+    "state": "Ceará",
+    "members": 70
+  },
+  {
+    "name": "Grupo Temático do Distrito Federal",
+    "type": "Grupos Temáticos",
+    "city": "Brasília",
+    "state": "Distrito Federal",
+    "members": 40
+  },
+  {
+    "name": "Núcleo Regional RBAC Espírito Santo",
+    "type": "Núcleos Regionais RBAC",
+    "city": "Vitória",
+    "state": "Espírito Santo",
+    "members": 25
+  },
+  {
+    "name": "Instituto Goiano de Ensino",
+    "type": "Instituições de Ensino",
+    "city": "Goiânia",
+    "state": "Goiás",
+    "members": 60
+  },
+  {
+    "name": "Secretaria de Educação do Maranhão",
+    "type": "Secretarias",
+    "city": "São Luís",
+    "state": "Maranhão",
+    "members": 45
+  },
+  {
+    "name": "Grupo Temático Matogrossense",
+    "type": "Grupos Temáticos",
+    "city": "Cuiabá",
+    "state": "Mato Grosso",
+    "members": 35
+  },
+  {
+    "name": "Núcleo Regional RBAC Mato Grosso do Sul",
+    "type": "Núcleos Regionais RBAC",
+    "city": "Campo Grande",
+    "state": "Mato Grosso do Sul",
+    "members": 55
+  },
+  {
+    "name": "Instituto Mineiro de Ensino",
+    "type": "Instituições de Ensino",
+    "city": "Belo Horizonte",
+    "state": "Minas Gerais",
+    "members": 90
+  },
+  {
+    "name": "Secretaria de Educação do Pará",
+    "type": "Secretarias",
+    "city": "Belém",
+    "state": "Pará",
+    "members": 75
+  },
+  {
+    "name": "Grupo Temático Paraibano",
+    "type": "Grupos Temáticos",
+    "city": "João Pessoa",
+    "state": "Paraíba",
+    "members": 15
+  },
+  {
+    "name": "Núcleo Regional RBAC Paranaense",
+    "type": "Núcleos Regionais RBAC",
+    "city": "Curitiba",
+    "state": "Paraná",
+    "members": 85
+  },
+  {
+    "name": "Instituto de Ensino de Pernambuco",
+    "type": "Instituições de Ensino",
+    "city": "Recife",
+    "state": "Pernambuco",
+    "members": 65
+  },
+  {
+    "name": "Secretaria de Educação do Piauí",
+    "type": "Secretarias",
+    "city": "Teresina",
+    "state": "Piauí",
+    "members": 55
+  },
+  {
+    "name": "Grupo Temático Fluminense",
+    "type": "Grupos Temáticos",
+    "city": "Rio de Janeiro",
+    "state": "Rio de Janeiro",
+    "members": 110
+  },
+  {
+    "name": "Núcleo Regional RBAC Norte-rio-grandense",
+    "type": "Núcleos Regionais RBAC",
+    "city": "Natal",
+    "state": "Rio Grande do Norte",
+    "members": 30
+  },
+  {
+    "name": "Instituto Gaúcho de Ensino",
+    "type": "Instituições de Ensino",
+    "city": "Porto Alegre",
+    "state": "Rio Grande do Sul",
+    "members": 85
+  },
+  {
+    "name": "Secretaria de Educação de Rondônia",
+    "type": "Secretarias",
+    "city": "Porto Velho",
+    "state": "Rondônia",
+    "members": 25
+  },
+  {
+    "name": "Grupo Temático Roraimense",
+    "type": "Grupos Temáticos",
+    "city": "Boa Vista",
+    "state": "Roraima",
+    "members": 10
+  },
+  {
+    "name": "Núcleo Regional RBAC Catarinense",
+    "type": "Núcleos Regionais RBAC",
+    "city": "Florianópolis",
+    "state": "Santa Catarina",
+    "members": 50
+  },
+  {
+    "name": "Instituto Paulista de Ensino",
+    "type": "Instituições de Ensino",
+    "city": "São Paulo",
+    "state": "São Paulo",
+    "members": 120
+  },
+  {
+    "name": "Secretaria de Educação de Sergipe",
+    "type": "Secretarias",
+    "city": "Aracaju",
+    "state": "Sergipe",
+    "members": 20
+  },
+  {
+    "name": "Grupo Temático Tocantinense",
+    "type": "Grupos Temáticos",
+    "city": "Palmas",
+    "state": "Tocantins",
+    "members": 15
+  }
+]
