@@ -1,4 +1,3 @@
-//Adding Map
 var map = L.map("map").setView([-15, -60], 4);
 var maxBounds = [
   [-90, -180],
@@ -142,16 +141,29 @@ function setGroupMarker(coordinates, groupName, groupType) {
   switch (groupType) {
     case rbacCoreGroupType:
       icon = starIcon;
+      break;
     case teachingInstituteType:
       icon = squareIcon;
+      break;
     case boardType:
       icon = circleIcon;
+      break;
     case thematicGroups:
       icon = triangleIcon;
+      break;
   }
+  console.log(icon);
 
   L.marker(coordinates, { icon: icon }).addTo(map).bindPopup(groupName);
 }
 
-setGroupMarker([-10, -45], "Grupo de apoio", "Núcleos Regionais RBAC");
 setCaptions();
+
+(async () => {
+  var response = await getGroups();
+  response.forEach((v) => {
+    var lat = Math.random() * 100;
+    var lon = Math.random() * 100;
+    setGroupMarker([lat, lon], v.name, v.type);
+  });
+})();

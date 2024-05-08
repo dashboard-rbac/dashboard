@@ -4,6 +4,7 @@
     "type": "Instituições de Ensino",
     "city": "Rio Branco",
     "state": "Acre",
+    "country": "Brasil",
     "members": 50
   },
   {
@@ -11,6 +12,7 @@
     "type": "Secretarias",
     "city": "Maceió",
     "state": "Alagoas",
+    "country": "Brasil",
     "members": 30
   },
   {
@@ -18,6 +20,7 @@
     "type": "Grupos Temáticos",
     "city": "Macapá",
     "state": "Amapá",
+    "country": "Brasil",
     "members": 20
   },
   {
@@ -25,6 +28,7 @@
     "type": "Núcleos Regionais RBAC",
     "city": "Manaus",
     "state": "Amazonas",
+    "country": "Brasil",
     "members": 100
   },
   {
@@ -32,6 +36,7 @@
     "type": "Instituições de Ensino",
     "city": "Salvador",
     "state": "Bahia",
+    "country": "Brasil",
     "members": 80
   },
   {
@@ -39,6 +44,7 @@
     "type": "Secretarias",
     "city": "Fortaleza",
     "state": "Ceará",
+    "country": "Brasil",
     "members": 70
   },
   {
@@ -46,6 +52,7 @@
     "type": "Grupos Temáticos",
     "city": "Brasília",
     "state": "Distrito Federal",
+    "country": "Brasil",
     "members": 40
   },
   {
@@ -53,6 +60,7 @@
     "type": "Núcleos Regionais RBAC",
     "city": "Vitória",
     "state": "Espírito Santo",
+    "country": "Brasil",
     "members": 25
   },
   {
@@ -60,6 +68,7 @@
     "type": "Instituições de Ensino",
     "city": "Goiânia",
     "state": "Goiás",
+    "country": "Brasil",
     "members": 60
   },
   {
@@ -67,6 +76,7 @@
     "type": "Secretarias",
     "city": "São Luís",
     "state": "Maranhão",
+    "country": "Brasil",
     "members": 45
   },
   {
@@ -74,6 +84,7 @@
     "type": "Grupos Temáticos",
     "city": "Cuiabá",
     "state": "Mato Grosso",
+    "country": "Brasil",
     "members": 35
   },
   {
@@ -81,6 +92,7 @@
     "type": "Núcleos Regionais RBAC",
     "city": "Campo Grande",
     "state": "Mato Grosso do Sul",
+    "country": "Brasil",
     "members": 55
   },
   {
@@ -88,6 +100,7 @@
     "type": "Instituições de Ensino",
     "city": "Belo Horizonte",
     "state": "Minas Gerais",
+    "country": "Brasil",
     "members": 90
   },
   {
@@ -95,6 +108,7 @@
     "type": "Secretarias",
     "city": "Belém",
     "state": "Pará",
+    "country": "Brasil",
     "members": 75
   },
   {
@@ -102,6 +116,7 @@
     "type": "Grupos Temáticos",
     "city": "João Pessoa",
     "state": "Paraíba",
+    "country": "Brasil",
     "members": 15
   },
   {
@@ -109,6 +124,7 @@
     "type": "Núcleos Regionais RBAC",
     "city": "Curitiba",
     "state": "Paraná",
+    "country": "Brasil",
     "members": 85
   },
   {
@@ -116,6 +132,7 @@
     "type": "Instituições de Ensino",
     "city": "Recife",
     "state": "Pernambuco",
+    "country": "Brasil",
     "members": 65
   },
   {
@@ -123,6 +140,7 @@
     "type": "Secretarias",
     "city": "Teresina",
     "state": "Piauí",
+    "country": "Brasil",
     "members": 55
   },
   {
@@ -130,6 +148,7 @@
     "type": "Grupos Temáticos",
     "city": "Rio de Janeiro",
     "state": "Rio de Janeiro",
+    "country": "Brasil",
     "members": 110
   },
   {
@@ -137,6 +156,7 @@
     "type": "Núcleos Regionais RBAC",
     "city": "Natal",
     "state": "Rio Grande do Norte",
+    "country": "Brasil",
     "members": 30
   },
   {
@@ -144,6 +164,7 @@
     "type": "Instituições de Ensino",
     "city": "Porto Alegre",
     "state": "Rio Grande do Sul",
+    "country": "Brasil",
     "members": 85
   },
   {
@@ -151,6 +172,7 @@
     "type": "Secretarias",
     "city": "Porto Velho",
     "state": "Rondônia",
+    "country": "Brasil",
     "members": 25
   },
   {
@@ -158,6 +180,7 @@
     "type": "Grupos Temáticos",
     "city": "Boa Vista",
     "state": "Roraima",
+    "country": "Brasil",
     "members": 10
   },
   {
@@ -165,6 +188,7 @@
     "type": "Núcleos Regionais RBAC",
     "city": "Florianópolis",
     "state": "Santa Catarina",
+    "country": "Brasil",
     "members": 50
   },
   {
@@ -172,6 +196,7 @@
     "type": "Instituições de Ensino",
     "city": "São Paulo",
     "state": "São Paulo",
+    "country": "Brasil",
     "members": 120
   },
   {
@@ -179,6 +204,7 @@
     "type": "Secretarias",
     "city": "Aracaju",
     "state": "Sergipe",
+    "country": "Brasil",
     "members": 20
   },
   {
@@ -186,6 +212,7 @@
     "type": "Grupos Temáticos",
     "city": "Palmas",
     "state": "Tocantins",
+    "country": "Brasil",
     "members": 15
   }
 ]
