@@ -3,7 +3,7 @@ var maxBounds = [
   [-90, -180],
   [90, 180],
 ];
-var maxValue = 0
+var maxValue = 0;
 
 map.setMaxBounds(maxBounds);
 map.on("drag", function () {
@@ -32,7 +32,6 @@ info.update = function (props) {
 };
 info.addTo(map);
 
-
 function setCaptions() {
   var caption = L.control({ position: "bottomright" });
 
@@ -52,60 +51,42 @@ function setCaptions() {
   caption.addTo(map);
 }
 
-var legend = L.control({position: 'bottomleft'});
-legend.onAdd = function (map) {
-    var div = L.DomUtil.create('div', 'info legend'),
-    grades = [1, maxValue/7, maxValue * 2/7, maxValue * 3/7, maxValue * 4/7, maxValue * 5/7, maxValue * 6/7,  maxValue]
-
-    for (i = 0; i < grades.length - 1; i++) {
-        div.innerHTML +=
-            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
-            grades[i].toFixed() + (grades[i + 1] ? '&ndash;' + grades[i + 1].toFixed() + '<br>' : '+');
-    }
-
-    div.innerHTML +=
-            '<i style="background:' + getColor(grades[grades.length - 1]) + '"></i> ' +
-            grades[grades.length-1].toFixed();
-
-    return div;
-};
-legend.addTo(map);
-
 var iconMap = L.Icon.extend({
   options: {
-    iconSize: [10, 10],
     iconAnchor: [5, 5],
     popupAnchor: [5, 5],
   },
 });
-var squareIcon = new iconMap({ iconUrl: "images/black-square.png" }),
-  circleIcon = new iconMap({ iconUrl: "images/black-circle.png" }),
-  triangleIcon = new iconMap({ iconUrl: "images/black-triangle.png" }),
-  starIcon = new iconMap({ iconUrl: "images/black-star.png" });
 
-function setGroupMarker(coordinates, groupName, groupType) {
+function setGroupMarker(coordinates, groupName, groupType, members) {
   var rbacCoreGroupType = "Núcleos Regionais RBAC",
     teachingInstituteType = "Instituições de Ensino",
     boardType = "Secretarias",
     thematicGroups = "Grupos Temáticos";
 
-  var icon = "";
+  var icon;
   switch (groupType) {
     case rbacCoreGroupType:
-      icon = starIcon;
+      icon = new iconMap({ iconUrl: "images/black-star.png", iconSize: [calculateIconSize(members), calculateIconSize(members)] });
       break;
     case teachingInstituteType:
-      icon = squareIcon;
+      icon = new iconMap({ iconUrl: "images/black-square.png", iconSize: [calculateIconSize(members), calculateIconSize(members)] });
       break;
     case boardType:
-      icon = circleIcon;
+      icon = new iconMap({ iconUrl: "images/black-circle.png", iconSize: [calculateIconSize(members), calculateIconSize(members)] });
       break;
     case thematicGroups:
-      icon = triangleIcon;
+      icon = new iconMap({ iconUrl: "images/black-triangle.png", iconSize: [calculateIconSize(members), calculateIconSize(members)] });
       break;
   }
 
-  L.marker(coordinates, { icon: icon }).addTo(map).bindPopup(groupName);
+  var popupContent = "<b>" + groupName + "</b><br>" + members + " membros";
+
+  L.marker(coordinates, { icon: icon }).addTo(map).bindPopup(popupContent);
+}
+
+function calculateIconSize(members) {
+  return Math.min(Math.max(members * 0.5, 7), 12);
 }
 
 setCaptions();
@@ -140,73 +121,98 @@ function onEachFeature(feature, layer) {
   });
 }
 
-function getColor(d, maxValue) {
-  var thresholds = [
-    { threshold: maxValue, color: "#0F8418" },
-    { threshold: maxValue * 6/7, color: "#8CBB2C" },
-    { threshold: maxValue * 5/7, color: "#54DF5E" },
-    { threshold: maxValue * 4/7, color: "#00FF14" },
-    { threshold: maxValue * 3/7, color: "#00FF14" },
-    { threshold: maxValue * 2/7, color: "#00FF14" },
-    { threshold: maxValue/7, color: "#00FF14" },
-    { threshold: 1, color: "#FFEDA0" },
-  ];
+function replaceSpecialChars(str) {
+  str = str.replace(/[ÀÁÂÃÄÅ]/, "A");
+  str = str.replace(/[ÈÉÊË]/, "E");
+  str = str.replace(/[Ç]/, "C");
+  str = str.replace(/[ç]/, "c");
 
-  for (var i = 0; i < thresholds.length; i++) {
-    if (d > thresholds[i].threshold) {
-      return thresholds[i].color;
-    }
-  }
-
-  return "#DADADA";
+  return str.replace(/[^a-z0-9]/gi, "");
 }
 
-function replaceSpecialChars(str)
-{
-    str = str.replace(/[ÀÁÂÃÄÅ]/,"A");
-    str = str.replace(/[ÈÉÊË]/,"E");
-    str = str.replace(/[Ç]/,"C");
-    str = str.replace(/[ç]/,"c");
-
-    return str.replace(/[^a-z0-9]/gi,''); 
-}
+var maxValue = -1;
 
 (async () => {
   var response = await getUsersCountByState();
   response.forEach((v) => {
     var feature = statesData.features.find(
-      (feature) => replaceSpecialChars(feature.properties.name.toUpperCase()) === replaceSpecialChars(v.state.toUpperCase())
+      (feature) =>
+        replaceSpecialChars(feature.properties.name.toUpperCase()) ===
+        replaceSpecialChars(v.state.toUpperCase())
     );
-    
-    if(v.users > maxValue)
-      maxValue = v.users;
-    console.log(maxValue);
 
-    console.log(v.state, v.users, feature.properties.name)
+    if (v.users > maxValue) maxValue = v.users;
 
     feature.properties.users = v.users;
   });
-  
-    function style(feature) {
-      return {
-        fillColor: getColor(feature.properties.users),
-        weight: 2,
-        opacity: 1,
-        color: "white",
-        dashArray: "0",
-        fillOpacity: 0.3,
-      };
+
+  function getColor(d) {
+    var thresholds = [
+      { threshold: 1, color: "#D0F0C0" },
+      { threshold: maxValue / 7, color: "#A2E18C" },
+      { threshold: (maxValue * 2) / 7, color: "#73D358" },
+      { threshold: (maxValue * 3) / 7, color: "#45C424" },
+      { threshold: (maxValue * 4) / 7, color: "#1DB700" },
+      { threshold: (maxValue * 5) / 7, color: "#148A00" },
+      { threshold: (maxValue * 6) / 7, color: "#0E6600" },
+      { threshold: maxValue, color: "#004000" }
+    ];
+    
+    for (var i = 0; i < thresholds.length; i++) {
+      if (d <= thresholds[i].threshold) {
+        return thresholds[i].color;
+      }
     }
 
-    geojson = L.geoJson(statesData, {
-      style: style,
-      onEachFeature: onEachFeature,
-    }).addTo(map);
+    return "#DADADA";
+  }
+
+  function style(feature) {
+    return {
+      fillColor: getColor(feature.properties.users),
+      weight: 2,
+      opacity: 1,
+      color: "white",
+      dashArray: "0",
+      fillOpacity: 0.4,
+    };
+  }
+
+  var legend = L.control({ position: "bottomleft" });
+  legend.onAdd = function (map) {
+    var div = L.DomUtil.create("div", "info legend"),
+      grades = [
+        1,
+        maxValue / 7,
+        (maxValue * 2) / 7,
+        (maxValue * 3) / 7,
+        (maxValue * 4) / 7,
+        (maxValue * 5) / 7,
+        (maxValue * 6) / 7,
+        maxValue,
+      ];
+
+    for (i = 0; i < grades.length - 1; i++) {
+      div.innerHTML +=
+        '<i style="background:' +
+        getColor(grades[i] + 1) +
+        '"></i> ' +
+        (grades[i + 1] ? grades[i].toFixed() + " &ndash; " + grades[i + 1].toFixed() + "<br>" : "+");
+    }
+
+    return div;
+  };
+  legend.addTo(map);
+
+  geojson = L.geoJson(statesData, {
+    style: style,
+    onEachFeature: onEachFeature,
+  }).addTo(map);
 })();
 
 (async () => {
   var response = await getGroups();
   response.forEach((v) => {
-    setGroupMarker(v.coordinates, v.name, v.type);
+    setGroupMarker(v.coordinates, v.name, v.type, v.members);
   });
 })();
