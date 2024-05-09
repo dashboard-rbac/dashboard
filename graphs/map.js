@@ -3,6 +3,7 @@ var maxBounds = [
   [-90, -180],
   [90, 180],
 ];
+var maxValue = 0
 
 map.setMaxBounds(maxBounds);
 map.on("drag", function () {
@@ -31,6 +32,7 @@ info.update = function (props) {
 };
 info.addTo(map);
 
+
 function setCaptions() {
   var caption = L.control({ position: "bottomright" });
 
@@ -49,6 +51,25 @@ function setCaptions() {
 
   caption.addTo(map);
 }
+
+var legend = L.control({position: 'bottomleft'});
+legend.onAdd = function (map) {
+    var div = L.DomUtil.create('div', 'info legend'),
+    grades = [1, maxValue/7, maxValue * 2/7, maxValue * 3/7, maxValue * 4/7, maxValue * 5/7, maxValue * 6/7,  maxValue]
+
+    for (i = 0; i < grades.length - 1; i++) {
+        div.innerHTML +=
+            '<i style="background:' + getColor(grades[i] + 1) + '"></i> ' +
+            grades[i].toFixed() + (grades[i + 1] ? '&ndash;' + grades[i + 1].toFixed() + '<br>' : '+');
+    }
+
+    div.innerHTML +=
+            '<i style="background:' + getColor(grades[grades.length - 1]) + '"></i> ' +
+            grades[grades.length-1].toFixed();
+
+    return div;
+};
+legend.addTo(map);
 
 var iconMap = L.Icon.extend({
   options: {
@@ -119,16 +140,16 @@ function onEachFeature(feature, layer) {
   });
 }
 
-function getColor(d) {
+function getColor(d, maxValue) {
   var thresholds = [
-    { threshold: 1000, color: "#0F8418" },
-    { threshold: 500, color: "#8CBB2C" },
-    { threshold: 200, color: "#54DF5E" },
-    { threshold: 100, color: "#00FF14" },
-    { threshold: 50, color: "#00FF14" },
-    { threshold: 20, color: "#00FF14" },
-    { threshold: 10, color: "#00FF14" },
-    { threshold: 0, color: "#FFEDA0" },
+    { threshold: maxValue, color: "#0F8418" },
+    { threshold: maxValue * 6/7, color: "#8CBB2C" },
+    { threshold: maxValue * 5/7, color: "#54DF5E" },
+    { threshold: maxValue * 4/7, color: "#00FF14" },
+    { threshold: maxValue * 3/7, color: "#00FF14" },
+    { threshold: maxValue * 2/7, color: "#00FF14" },
+    { threshold: maxValue/7, color: "#00FF14" },
+    { threshold: 1, color: "#FFEDA0" },
   ];
 
   for (var i = 0; i < thresholds.length; i++) {
@@ -156,6 +177,10 @@ function replaceSpecialChars(str)
     var feature = statesData.features.find(
       (feature) => replaceSpecialChars(feature.properties.name.toUpperCase()) === replaceSpecialChars(v.state.toUpperCase())
     );
+    
+    if(v.users > maxValue)
+      maxValue = v.users;
+    console.log(maxValue);
 
     console.log(v.state, v.users, feature.properties.name)
 
