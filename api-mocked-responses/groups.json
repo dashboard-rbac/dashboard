@@ -1,0 +1,164 @@
+[
+  {
+    "name": "Instituto Educacional Acreano",
+    "type": "Instituições de Ensino",
+    "coordinates": [-9.5879722, -67.53307],
+    "members": 50
+  },
+  {
+    "name": "Secretaria de Educação de Alagoas",
+    "type": "Secretarias",
+    "coordinates": [-9.6611662, -35.735873],
+    "members": 30
+  },
+  {
+    "name": "Grupo Temático Amazônico",
+    "type": "Grupos Temáticos",
+    "coordinates": [0.0441576, -51.0671296],
+    "members": 20
+  },
+  {
+    "name": "Núcleo Regional RBAC Amazonas",
+    "type": "Núcleos Regionais RBAC",
+    "coordinates": [-3.10194, -60.025],
+    "members": 100
+  },
+  {
+    "name": "Instituto Baiano de Ensino",
+    "type": "Instituições de Ensino",
+    "coordinates": [-12.9715988, -38.5019149],
+    "members": 80
+  },
+  {
+    "name": "Secretaria de Educação do Ceará",
+    "type": "Secretarias",
+    "coordinates": [-3.717222, -38.543056],
+    "members": 70
+  },
+  {
+    "name": "Grupo Temático do Distrito Federal",
+    "type": "Grupos Temáticos",
+    "coordinates": [-15.793889, -47.882778],
+    "members": 40
+  },
+  {
+    "name": "Núcleo Regional RBAC Espírito Santo",
+    "type": "Núcleos Regionais RBAC",
+    "coordinates": [-20.3156172, -40.3122785],
+    "members": 25
+  },
+  {
+    "name": "Instituto Goiano de Ensino",
+    "type": "Instituições de Ensino",
+    "coordinates": [-16.6799, -49.255],
+    "members": 60
+  },
+  {
+    "name": "Secretaria de Educação do Maranhão",
+    "type": "Secretarias",
+    "coordinates": [-2.53874, -44.2824],
+    "members": 45
+  },
+  {
+    "name": "Grupo Temático Matogrossense",
+    "type": "Grupos Temáticos",
+    "coordinates": [-15.601, -56.0974],
+    "members": 35
+  },
+  {
+    "name": "Núcleo Regional RBAC Mato Grosso do Sul",
+    "type": "Núcleos Regionais RBAC",
+    "coordinates": [-20.4697, -54.6201],
+    "members": 55
+  },
+  {
+    "name": "Instituto Mineiro de Ensino",
+    "type": "Instituições de Ensino",
+    "coordinates": [-19.9167, -43.9345],
+    "members": 90
+  },
+  {
+    "name": "Secretaria de Educação do Pará",
+    "type": "Secretarias",
+    "coordinates": [-1.45583, -48.5044],
+    "members": 75
+  },
+  {
+    "name": "Grupo Temático Paraibano",
+    "type": "Grupos Temáticos",
+    "coordinates": [-7.115, -34.861],
+    "members": 15
+  },
+  {
+    "name": "Núcleo Regional RBAC Paranaense",
+    "type": "Núcleos Regionais RBAC",
+    "coordinates": [-25.4284, -49.2733],
+    "members": 85
+  },
+  {
+    "name": "Instituto de Ensino de Pernambuco",
+    "type": "Instituições de Ensino",
+    "coordinates": [-8.04756, -34.877],
+    "members": 65
+  },
+  {
+    "name": "Secretaria de Educação do Piauí",
+    "type": "Secretarias",
+    "coordinates": [-5.08921, -42.8019],
+    "members": 55
+  },
+  {
+    "name": "Grupo Temático Fluminense",
+    "type": "Grupos Temáticos",
+    "coordinates": [-22.9068, -43.1729],
+    "members": 110
+  },
+  {
+    "name": "Núcleo Regional RBAC Norte-rio-grandense",
+    "type": "Núcleos Regionais RBAC",
+    "coordinates": [-5.79447, -35.211],
+    "members": 30
+  },
+  {
+    "name": "Instituto Gaúcho de Ensino",
+    "type": "Instituições de Ensino",
+    "coordinates": [-30.0346, -51.2177],
+    "members": 85
+  },
+  {
+    "name": "Secretaria de Educação de Rondônia",
+    "type": "Secretarias",
+    "coordinates": [-8.76194, -63.9008],
+    "members": 25
+  },
+  {
+    "name": "Grupo Temático Roraimense",
+    "type": "Grupos Temáticos",
+    "coordinates": [2.81989, -60.6733],
+    "members": 10
+  },
+  {
+    "name": "Núcleo Regional RBAC Catarinense",
+    "type": "Núcleos Regionais RBAC",
+    "coordinates": [-27.5954, -48.548],
+    "members": 50
+  },
+  {
+    "name": "Instituto Paulista de Ensino",
+    "type": "Instituições de Ensino",
+    "coordinates": [-23.5505, -46.6333],
+    "members": 120
+  },
+  {
+    "name": "Secretaria de Educação de Sergipe",
+    "type": "Secretarias",
+    "coordinates": [-10.9472, -37.0731],
+    "members": 20
+  },
+  {
+    "name": "Grupo Temático Tocantinense",
+    "type": "Grupos Temáticos",
+    "coordinates": [-10.2128, -48.3603],
+    "members": 15
+  }
+]
