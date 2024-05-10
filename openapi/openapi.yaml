@@ -75,7 +75,7 @@ paths:
       summary: Groups and Users evolution
       responses:
         "200":
-          description: Resposta bem-sucedida
+          description: Successful response
           content:
             application/json:
               schema:
