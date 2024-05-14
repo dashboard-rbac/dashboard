@@ -398,9 +398,14 @@ footer {
         width: 80px;
         margin-left: 20px;
     }
+
+    #user-post{
+        padding: 50px;
+    }
+
     #menu{
         position:absolute;
-        top: 8vh;
+        top: 5%;
         left: 0;
         width: 70vw;
         height: 92vh;
