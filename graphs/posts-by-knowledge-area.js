@@ -17,7 +17,7 @@ const buildPostsByKnowledgeAreaGraph = (labels, data) => {
   });
 };
 
-(async() => {
+(async () => {
   let labels = [];
   let data = [];
 
@@ -28,4 +28,4 @@ const buildPostsByKnowledgeAreaGraph = (labels, data) => {
   });
 
   buildPostsByKnowledgeAreaGraph(labels, data);
-})()
+})();
