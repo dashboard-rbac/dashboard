@@ -399,8 +399,23 @@ footer {
         margin-left: 20px;
     }
 
+    .graph-title-container
+    {
+        width: 40%;
+        font-size: 0.7rem;
+    }
+
     #user-post{
         padding: 50px;
+    }
+
+    #table-top-5-people{
+
+        font-size: 10px;
+    }
+
+    .responsivity-td{
+        display: none;
     }
 
     #menu{
