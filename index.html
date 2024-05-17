@@ -6,117 +6,135 @@
     <title>Dashboard - RBAC</title>
 
     <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
-    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
-    crossorigin=""/>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
     <script
       src="https://kit.fontawesome.com/c6cd73418f.js"
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.js"
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
     ></script>
-    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
-    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
-    crossorigin=""></script>
   </head>
+
   <body>
     <header>
       <div id="header-content">
-        <div>
-          <a href="https://aprendizagemcriativa.org/">
-            <img id="logo" src="images/logo.png" alt="Logo" />
-          </a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
         </div>
-        <div>
-          <nav>
-            <ul id="menu">
-              <li onclick="toggleSubMenu()">
-                Sobre
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 16"
-                  style="fill: rgba(0, 0, 0, 1)"
-                >
-                  <path
-                    d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
-                  ></path>
-                </svg>
-                <ul class="submenu" id="submenu">
-                  <li>
-                    <a href="https://aprendizagemcriativa.org/sobre-rbac">
-                      Sobre a RBAC
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://aprendizagemcriativa.org/sobre-aprendizagem-criativa">
-                      Sobre a Aprendizagem Criativa
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://aprendizagemcriativa.org/apoie">
-                      Apoie a RBAC
-                    </a>
-                  </li>
-                  <li>
-                    <a href="https://aprendizagemcriativa.org/nosso-manifesto">
-                      Nosso Manifesto
-                    </a>
-                  </li>
-                </ul>
-              </li>
-              <li><a href="https://aprendizagemcriativa.org/comunidade">
+        <div id="div-block" class="overlay"></div>
+        <a href="https://aprendizagemcriativa.org/">
+          <img id="logo" src="images/logo.png" alt="Logo" />
+        </a>
+        <nav>
+          <ul id="menu">
+            <li onclick="toggleSubMenu()">
+              Sobre
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="14"
+                height="14"
+                viewBox="0 0 20 16"
+                style="fill: rgba(0, 0, 0, 1)"
+              >
+                <path
+                  d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+                ></path>
+              </svg>
+              <ul class="submenu" id="submenu">
+                <li>
+                  <a href="https://aprendizagemcriativa.org/sobre-rbac">
+                    Sobre a RBAC
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://aprendizagemcriativa.org/sobre-aprendizagem-criativa"
+                  >
+                    Sobre a Aprendizagem Criativa
+                  </a>
+                </li>
+                <li>
+                  <a href="https://aprendizagemcriativa.org/apoie">
+                    Apoie a RBAC
+                  </a>
+                </li>
+                <li>
+                  <a href="https://aprendizagemcriativa.org/nosso-manifesto">
+                    Nosso Manifesto
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <a href="https://aprendizagemcriativa.org/comunidade">
                 Comunidade
               </a>
             </li>
-              <li>
-                <a href="https://aprendizagemcriativa.org/iniciativas-da-rbac">
-                  Iniciativas
-                </a>
-              </li>
-              <li>
-              <a href="https://aprendizagemcriativa.org/mural">
-                Mural
+            <li>
+              <a href="https://aprendizagemcriativa.org/iniciativas-da-rbac">
+                Iniciativas
               </a>
-              </li>
-              <li>
-                <a href="https://aprendizagemcriativa.org/colecoes-formativas">
-                  Coleções Formativas
-                </a>
-              </li>
-              <li>
-                <a href="https://aprendizagemcriativa.org/estudio-pedagogico">
-                  Estúdio Pedagógico
-                </a>
-              </li>
-              <li>
-                <a href="https://aprendizagemcriativa.org/biblioteca">
-                  Biblioteca
-                </a>
-              </li>
-              <li>
-                <a href="https://aprendizagemcriativa.org/novidades">
-                  Novidades
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </div>
+            </li>
+            <li>
+              <a href="https://aprendizagemcriativa.org/mural">Mural</a>
+            </li>
+            <li>
+              <a href="https://aprendizagemcriativa.org/colecoes-formativas">
+                Coleções Formativas
+              </a>
+            </li>
+            <li>
+              <a href="https://aprendizagemcriativa.org/estudio-pedagogico">
+                Estúdio Pedagógico
+              </a>
+            </li>
+            <li>
+              <a href="https://aprendizagemcriativa.org/biblioteca">
+                Biblioteca
+              </a>
+            </li>
+            <li>
+              <a href="https://aprendizagemcriativa.org/novidades">Novidades</a>
+            </li>
+          </ul>
+        </nav>
         <div id="buttons">
-          <a href="https://aprendizagemcriativa.org/user/register?destination=/comunidade">
-            <button id="button-us">Faça parte da nossa rede</button>
-          </a>
-          <a href="https://aprendizagemcriativa.org/user/login?destination=/comunidade">
-            <button id="button-enter">Entrar</button>
-          </a>
+          <div id="button-us">
+            <a
+              href="https://aprendizagemcriativa.org/user/register?destination=/comunidade"
+            >
+              Faça parte da nossa rede
+            </a>
+          </div>
+          <div id="button-enter">
+            <a
+              href="https://aprendizagemcriativa.org/user/login?destination=/comunidade"
+            >
+              Entrar
+            </a>
+          </div>
         </div>
       </div>
     </header>
+
     <section id="section">
       <div id="section-text">
+        <div id="title">
+          <h1>Dashboard</h1>
+          <img src="images/green_label.png" alt="" />
+        </div>
         <p>
           Nesta página, você encontrará uma variedade de Dashboards informativos
           <br />
@@ -129,9 +147,9 @@
           informadas e impulsionar o sucesso de seus projetos e negócios.
         </p>
       </div>
-    </section> 
+    </section>
 
-    <div>
+    <div class="graph">
       <div class="graph-title-container">
         Usuários que mais interagem e postam no blog
       </div>
@@ -139,57 +157,54 @@
         <thead>
           <tr>
             <th>Nome</th>
-            <th>Área de Atuação</th>
-            <th>Ocupação</th>
+            <th class="responsiveness-td">Área de Atuação</th>
+            <th class="responsiveness-td">Ocupação</th>
             <th>Localização</th>
-            <th>Núcleo RBAC</th>
+            <th>Grupo</th>
           </tr>
         </thead>
         <tbody id="table-top-5-people-content"></tbody>
       </table>
     </div>
 
-    <div>
+    <div class="graph">
       <div class="graph-title-container">
         Evolução da Quantidade de Grupos e Quantidade de Membros
       </div>
       <canvas
         id="group-and-users-evolution"
         class="line-chart"
-        width="60%"
-        height="25%"
+        width="60"
+        height="25"
       ></canvas>
     </div>
 
-    <div id="map-container">
+    <div id="map-container" class="graph">
       <div class="graph-title-container">
         Densididade de Usuários e Localização de Grupos Relevantes por Estado
       </div>
-      <div id="map">
-      </div>
+      <div id="map"></div>
     </div>
 
-    <div>
+    <div class="graph">
       <div class="graph-title-container">
         Quantidade de postagens por área de conhecimento
       </div>
       <canvas
         id="posts-by-knowledge-area"
         class="line-chart"
-        width="60%"
-        height="25%"
+        width="60"
+        height="25"
       ></canvas>
     </div>
 
-    <div>
-      <div class="graph-title-container">
-        Atividade dos Usuários
-      </div>
+    <div class="graph">
+      <div class="graph-title-container">Atividade dos Usuários</div>
       <canvas
         id="user-activity"
         class="line-chart"
-        width="60%"
-        height="25%"
+        width="60"
+        height="25"
       ></canvas>
     </div>
 
@@ -269,25 +284,29 @@
         <img id="footer-mit" src="images/mit.png" alt="Mit Media Lab" />
       </div>
       <div id="footer-information">
-        Rede Brasileira de Aprendizagem Criativa - Todos os direitos reservados
-        -
-        <a href="https://aprendizagemcriativa.org/termos-de-uso">
-          &nbspTermos de uso&nbsp
-        </a>
-        -
-        <a href="https://aprendizagemcriativa.org/politica-de-privacidade">
-          &nbspPolítica de Privacidade&nbsp
-        </a>
-        -
-        <a href="https://aprendizagemcriativa.org/diretrizes-da-comunidade">
-          &nbspDiretrizes da Comunidade&nbsp
-        </a>
-        -
-        <a href="https://aprendizagemcriativa.org/contato">&nbspContato</a>
+        <p>
+          Rede Brasileira de Aprendizagem Criativa - Todos os direitos
+          reservados -
+          <a href="https://aprendizagemcriativa.org/termos-de-uso">
+            &nbsp;Termos de uso&nbsp;
+          </a>
+          -
+          <a href="https://aprendizagemcriativa.org/politica-de-privacidade">
+            &nbsp;Política de Privacidade&nbsp;
+          </a>
+          -
+          <a href="https://aprendizagemcriativa.org/diretrizes-da-comunidade">
+            &nbsp;Diretrizes da Comunidade&nbsp;
+          </a>
+          -
+          <a href="https://aprendizagemcriativa.org/contato">
+            &nbsp;Contato&nbsp;
+          </a>
+        </p>
       </div>
     </footer>
-    
     <script src="utils.js"></script>
+    <script src="mobilenav.js"></script>
     <script src="script.js"></script>
     <script src="api.js"></script>
     <script src="graphs/top-5-users.js"></script>

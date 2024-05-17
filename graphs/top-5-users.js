@@ -7,8 +7,8 @@ function buildTable(data) {
     const tr = document.createElement("tr");
     tr.innerHTML = `
     <td>${formatText(person.name)}</td>
-    <td>${formatText(person.area)}</td>
-    <td>${formatText(person.occupation)}</td>
+    <td class="responsiveness-td">${formatText(person.area)}</td>
+    <td class="responsiveness-td">${formatText(person.occupation)}</td>
     <td>${formatText(person.city)}, ${formatText(person.state)}, ${formatText(
       person.country
     )}</td>
