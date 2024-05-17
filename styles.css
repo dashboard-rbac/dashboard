@@ -430,7 +430,7 @@ footer {
     background: #fff;
     flex-direction: column;
     list-style-type: none;
-    display: flex;
+    display: none;
     align-items: center;
     padding-left: 15px;
     padding-right: 15px;
