@@ -54,8 +54,8 @@ async function getUsersCountByState() {
     return data;
 }
 
-async function getTop5Evolution() {
-    const response = await fetch(TOP_5_USERS_URL);
+async function getTop5Evolution(queryParams = "") {
+    const response = await fetch(TOP_5_USERS_URL + queryParams);
     const data = await response.json();
     return data;
 }
