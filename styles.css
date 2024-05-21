@@ -148,7 +148,7 @@
 
 .filters-container {
   display: flex;
-  align-items: flex-end;
+  align-items: flex-start;
   flex-wrap: wrap;
   gap: 16px;
   margin-bottom: 30px;
@@ -397,7 +397,7 @@ footer {
 }
 
 .legend {
-  line-height: 18px;
+  line-height: 20px;
   color: #555;
 }
 
