@@ -456,7 +456,8 @@ footer {
   }
 
   .graph-title-container {
-    width: 40%;
+    width: 50%;
+    padding: 10px;
     font-size: 0.7rem;
   }
 

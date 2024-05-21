@@ -218,6 +218,32 @@
       <div class="graph-title-container">
         Evolução da Quantidade de Grupos e Quantidade de Membros
       </div>
+      <div class="filters-container" id="group-and-users-evolution-filters-container">
+        <div class="text-filter" id="group-and-users-evolution-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="group-and-users-evolution-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="group-and-users-evolution-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="group-and-users-evolution-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="group-and-users-evolution-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="group-and-users-evolution-city-filter-input"
+          />
+        </div>
+        <div>
+          <button class="filter-button" id="group-and-users-evolution-filter-button">Buscar</button>
+        </div>
+      </div>
       <canvas
         id="group-and-users-evolution"
         class="line-chart"
@@ -225,10 +251,36 @@
         height="25"
       ></canvas>
     </div>
-
+    
     <div id="map-container" class="graph">
       <div class="graph-title-container">
         Densididade de Usuários e Localização de Grupos Relevantes por Estado
+      </div>
+      <div class="filters-container" id="map-filters-container">
+        <div class="text-filter" id="map-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="map-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="map-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="map-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="map-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="map-city-filter-input"
+          />
+        </div>
+        <div>
+          <button class="filter-button" id="map-filter-button">Buscar</button>
+        </div>
       </div>
       <div id="map"></div>
     </div>
@@ -236,6 +288,40 @@
     <div class="graph">
       <div class="graph-title-container">
         Quantidade de postagens por área de conhecimento
+      </div>
+      
+      <div class="filters-container" id="posts-by-knowledge-area-filters-container">
+        <div class="text-filter" id="posts-by-knowledge-area-country-filter">
+          <input
+            type="text"
+            placeholder="BNCC"
+            id="posts-by-knowledge-area-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="posts-by-knowledge-area-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="posts-by-knowledge-area-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="posts-by-knowledge-area-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="posts-by-knowledge-area-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="posts-by-knowledge-area-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="posts-by-knowledge-area-city-filter-input"
+          />
+        </div>
+        <div>
+          <button class="filter-button" id="posts-by-knowledge-area-filter-button">Buscar</button>
+        </div>
       </div>
       <canvas
         id="posts-by-knowledge-area"
@@ -247,6 +333,32 @@
 
     <div class="graph">
       <div class="graph-title-container">Atividade dos Usuários</div>
+      <div class="filters-container" id="user-activity-filters-container">
+        <div class="text-filter" id="user-activity-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="user-activity-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="user-activity-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="user-activity-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="user-activity-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="user-activity-city-filter-input"
+          />
+        </div>
+        <div>
+          <button class="filter-button" id="user-activity-filter-button">Buscar</button>
+        </div>
+      </div>
       <canvas
         id="user-activity"
         class="line-chart"
@@ -254,7 +366,6 @@
         height="25"
       ></canvas>
     </div>
-
     <footer>
       <div id="footer-menu">
         <ul id="footer-menu-links">
