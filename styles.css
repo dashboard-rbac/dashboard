@@ -197,6 +197,32 @@
   background-color: #d4d4d4;
 }
 
+#posts-by-knowledge-area-BNCC-filter{
+  width: 100%;
+  height: 100%;
+  background-color: #8cbb2c;
+  border: none;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#posts-by-knowledge-area-BNCC-filter-form{
+ 
+  background-color: #8cbb2c;
+  border: none;
+  color: #ffffff;
+  padding: 8px;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
