@@ -220,40 +220,40 @@
       </div>
       <div
         class="filters-container"
-        id="group-and-users-evolution-filters-container"
+        id="groups-and-users-evolution-filters-container"
       >
-        <div class="text-filter" id="group-and-users-evolution-country-filter">
+        <div class="text-filter" id="groups-and-users-evolution-country-filter">
           <input
             type="text"
             placeholder="Digite o seu país"
-            id="group-and-users-evolution-country-filter-input"
+            id="groups-and-users-evolution-country-filter-input"
           />
         </div>
-        <div class="text-filter" id="group-and-users-evolution-state-filter">
+        <div class="text-filter" id="groups-and-users-evolution-state-filter">
           <input
             type="text"
             placeholder="Digite o seu estado"
-            id="group-and-users-evolution-state-filter-input"
+            id="groups-and-users-evolution-state-filter-input"
           />
         </div>
-        <div class="text-filter" id="group-and-users-evolution-city-filter">
+        <div class="text-filter" id="groups-and-users-evolution-city-filter">
           <input
             type="text"
             placeholder="Digite a sua cidade"
-            id="group-and-users-evolution-city-filter-input"
+            id="groups-and-users-evolution-city-filter-input"
           />
         </div>
         <div>
           <button
             class="filter-button"
-            id="group-and-users-evolution-filter-button"
+            id="groups-and-users-evolution-filter-button"
           >
             Buscar
           </button>
         </div>
       </div>
       <canvas
-        id="group-and-users-evolution"
+        id="groups-and-users-evolution"
         class="line-chart"
         width="60"
         height="25"
@@ -304,7 +304,7 @@
       >
         <div class="checkbox-filter">
           <div
-            id="posts-by-knowledge-area-BNCC-filter"
+            id="posts-by-knowledge-area-bncc-filter"
             onclick="toggleFilterForm()"
           >
             Competências BNCC
@@ -459,36 +459,36 @@
 
     <div class="graph">
       <div class="graph-title-container">Atividade dos Usuários</div>
-      <div class="filters-container" id="user-activity-filters-container">
-        <div class="text-filter" id="user-activity-country-filter">
+      <div class="filters-container" id="users-activity-filters-container">
+        <div class="text-filter" id="users-activity-country-filter">
           <input
             type="text"
             placeholder="Digite o seu país"
-            id="user-activity-country-filter-input"
+            id="users-activity-country-filter-input"
           />
         </div>
-        <div class="text-filter" id="user-activity-state-filter">
+        <div class="text-filter" id="users-activity-state-filter">
           <input
             type="text"
             placeholder="Digite o seu estado"
-            id="user-activity-state-filter-input"
+            id="users-activity-state-filter-input"
           />
         </div>
-        <div class="text-filter" id="user-activity-city-filter">
+        <div class="text-filter" id="users-activity-city-filter">
           <input
             type="text"
             placeholder="Digite a sua cidade"
-            id="user-activity-city-filter-input"
+            id="users-activity-city-filter-input"
           />
         </div>
         <div>
-          <button class="filter-button" id="user-activity-filter-button">
+          <button class="filter-button" id="users-activity-filter-button">
             Buscar
           </button>
         </div>
       </div>
       <canvas
-        id="user-activity"
+        id="users-activity"
         class="line-chart"
         width="60"
         height="25"
@@ -598,10 +598,14 @@
     <script src="api.js"></script>
     <script src="graphs/top-5-users.js"></script>
     <script src="graphs/posts-by-knowledge-area.js"></script>
-    <script src="graphs/group-and-users-evolution.js"></script>
-    <script src="graphs/user-activity.js"></script>
+    <script src="graphs/groups-and-users-evolution.js"></script>
+    <script src="graphs/users-activity.js"></script>
     <script src="graphs/brazil-states.js"></script>
     <script src="graphs/map.js"></script>
     <script src="filters/top-5-users.js"></script>
+    <script src="filters/groups-and-users-evolution.js"></script>
+    <script src="filters/map.js"></script>
+    <script src="filters/posts-by-knowledge-area.js"></script>
+    <script src="filters/users-activity.js"></script>
   </body>
 </html>
