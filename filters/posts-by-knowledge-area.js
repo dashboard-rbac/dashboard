@@ -18,10 +18,7 @@ postsByKnowledgeAreaButton.addEventListener("click", async () => {
   const selectedCompetencies = Array.from(form.querySelectorAll('input[name="bncc-competencies"]:checked'))
       .map(input => input.value);
 
-  const filters = [
-    {
-      bncc: selectedCompetencies,
-    },
+  const stringFilters = [
     {
       country: countryFilter,
     },
@@ -32,10 +29,16 @@ postsByKnowledgeAreaButton.addEventListener("click", async () => {
       city: cityFilter,
     },
   ];
-console.log(filters)
+
+  const arrayFilters = [
+    {
+      bncc: selectedCompetencies,
+    },
+  ];
+
   const queryParams =
       "?" +
-      filters
+      stringFilters
           .filter(
               (filter) =>
                   Object.values(filter)[0] !== undefined &&
@@ -45,6 +48,18 @@ console.log(filters)
             const key = Object.keys(filter)[0];
             const value = filter[key];
             return `${key}=${value}`;
+          })
+          .join("&")
+      + arrayFilters
+          .filter(
+              (filter) =>
+                  Object.values(filter)[0] !== undefined &&
+                  Object.values(filter)[0].length > 0
+          )
+          .map((filter) => {
+            const key = Object.keys(filter)[0];
+            const value = filter[key];
+            return `${key}=${value.join(",")}`;
           })
           .join("&");
 
