@@ -139,7 +139,7 @@
 }
 
 #section-text {
-  margin-left: 20%;
+  margin-left: 7%;
 }
 
 #section-text p {
@@ -150,8 +150,8 @@
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
+  width: 100%;
   gap: 16px;
-  margin-bottom: 30px;
   margin: 0 30px 30px;
 }
 
@@ -211,7 +211,6 @@
 }
 
 #posts-by-knowledge-area-BNCC-filter-form{
- 
   background-color: #8cbb2c;
   border: none;
   color: #ffffff;
@@ -307,17 +306,24 @@ footer {
   color: #ed008c;
 }
 
+.graph {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 95%;
+  margin: 0 2.5% 0;
+}
+
 .graph-title-container {
   width: 300px;
   height: 40px;
   background-color: rgb(140, 199, 64);
   border-radius: 10px;
   display: flex;
-  top: 0;
-  left: 0;
   color: white;
-  padding: 0px;
   font-size: 17px;
+  font-weight: 600;
+  padding: 30px;
   text-align: center;
   justify-content: center;
   align-items: center;
@@ -356,7 +362,7 @@ footer {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  margin: 10px;
+
 }
 
 #map {
@@ -431,7 +437,17 @@ footer {
   transform: rotate(45deg) translate(-4px, -4px);
 }
 
+
+
 @media (max-width: 1100px) {
+  #map { 
+    width: 90%;
+  }
+
+  #section-text {
+    margin-right: 5%;
+  }
+
   #header-content {
     display: flex;
     flex-direction: column;
@@ -456,11 +472,7 @@ footer {
     font-size: 13px;
   }
 
-  .graph {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+  
 }
 
 @media (max-width: 900px) {
@@ -482,9 +494,8 @@ footer {
   }
 
   .graph-title-container {
-    width: 50%;
-    padding: 10px;
-    font-size: 0.7rem;
+    width: 60%;
+    font-size: 0.8rem;
   }
 
   #table-top-5-people {
@@ -557,6 +568,14 @@ footer {
     border-width: 10px;
     border-style: solid;
     border-color: transparent transparent rgba(250, 250, 250, 1) transparent;
+  }
+
+  .text-filter > input {
+    font-size: 12px;
+  }
+  
+  .filter-button {
+    font-size: 14px;
   }
 
   @keyframes navLinkFade {
