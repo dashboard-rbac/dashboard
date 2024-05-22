@@ -1,5 +1,5 @@
 function toggleFilterForm() {
-    const formContainer = document.getElementById('posts-by-knowledge-area-BNCC-filter-form-container');
+    const formContainer = document.getElementById('posts-by-knowledge-area-bncc-filter-form-container');
 
     
     if (formContainer.style.display === 'none' || formContainer.style.display === '') {

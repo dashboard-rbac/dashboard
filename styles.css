@@ -159,6 +159,7 @@
   flex-grow: 2;
   flex-basis: 200px;
 }
+
 .text-filter > input {
   width: 100%;
   height: 100%;
@@ -197,7 +198,12 @@
   background-color: #d4d4d4;
 }
 
-#posts-by-knowledge-area-BNCC-filter{
+.checkbox-filter {
+  flex-grow: 3;
+  flex-basis: 200px;
+}
+
+#posts-by-knowledge-area-BNCC-filter {
   width: 100%;
   height: 100%;
   background-color: #8cbb2c;
@@ -210,7 +216,7 @@
   font-weight: bold;
 }
 
-#posts-by-knowledge-area-BNCC-filter-form{
+#posts-by-knowledge-area-bncc-filter-form {
   background-color: #8cbb2c;
   border: none;
   color: #ffffff;
@@ -427,12 +433,15 @@ footer {
   margin: 4px;
   transition: 0.5s;
 }
+
 .mobile-menu.active .line1 {
   transform: rotate(-45deg) translate(-4px, 4px);
 }
+
 .mobile-menu.active .line2 {
   opacity: 0;
 }
+
 .mobile-menu.active .line3 {
   transform: rotate(45deg) translate(-4px, -4px);
 }
@@ -525,6 +534,7 @@ footer {
     padding-right: 15px;
     box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
   }
+
   #menu.active {
     transform: translateX(0);
     display: flex;
