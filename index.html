@@ -218,8 +218,42 @@
       <div class="graph-title-container">
         Evolução da Quantidade de Grupos e Quantidade de Membros
       </div>
+      <div
+        class="filters-container"
+        id="groups-and-users-evolution-filters-container"
+      >
+        <div class="text-filter" id="groups-and-users-evolution-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="groups-and-users-evolution-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="groups-and-users-evolution-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="groups-and-users-evolution-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="groups-and-users-evolution-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="groups-and-users-evolution-city-filter-input"
+          />
+        </div>
+        <div>
+          <button
+            class="filter-button"
+            id="groups-and-users-evolution-filter-button"
+          >
+            Buscar
+          </button>
+        </div>
+      </div>
       <canvas
-        id="group-and-users-evolution"
+        id="groups-and-users-evolution"
         class="line-chart"
         width="60"
         height="25"
@@ -230,12 +264,190 @@
       <div class="graph-title-container">
         Densididade de Usuários e Localização de Grupos Relevantes por Estado
       </div>
+      <div class="filters-container" id="map-filters-container">
+        <div class="text-filter" id="map-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="map-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="map-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="map-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="map-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="map-city-filter-input"
+          />
+        </div>
+        <div>
+          <button class="filter-button" id="map-filter-button">Buscar</button>
+        </div>
+      </div>
       <div id="map"></div>
     </div>
 
     <div class="graph">
       <div class="graph-title-container">
         Quantidade de postagens por área de conhecimento
+      </div>
+
+      <div
+        class="filters-container"
+        id="posts-by-knowledge-area-filters-container"
+      >
+        <div class="checkbox-filter">
+          <div
+            id="posts-by-knowledge-area-bncc-filter"
+            onclick="toggleFilterForm()"
+          >
+            Competências BNCC
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="14"
+              height="14"
+              viewBox="0 0 20 16"
+              style="fill: rgb(255, 255, 255)"
+            >
+              <path
+                d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z"
+              ></path>
+            </svg>
+          </div>
+          <div
+            id="posts-by-knowledge-area-bncc-filter-form-container"
+            style="display: none"
+          >
+            <form id="posts-by-knowledge-area-bncc-filter-form">
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="knowledge"
+                />
+                Knowledge
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="scientific-critical-and-creative-thinking"
+                />
+                Scientific, critical, and creative thinking
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="aesthetic-sense-and-cultural-repertoire"
+                />
+                Aesthetic sense and cultural repertoire
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="communication"
+                />
+                Communication
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="digital-culture"
+                />
+                Digital culture
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="self-management"
+                />
+                Self-management
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="argumentation"
+                />
+                Argumentation
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="self-knowledge-and-self-care"
+                />
+                Self-knowledge and self-care
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="empathy-and-cooperation"
+                />
+                Empathy and cooperation
+              </label>
+              <br />
+              <label>
+                <input
+                  type="checkbox"
+                  name="bncc-competencies"
+                  value="autonomy"
+                />
+                Autonomy
+              </label>
+              <br />
+            </form>
+          </div>
+        </div>
+
+        <div class="text-filter" id="posts-by-knowledge-area-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="posts-by-knowledge-area-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="posts-by-knowledge-area-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="posts-by-knowledge-area-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="posts-by-knowledge-area-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="posts-by-knowledge-area-city-filter-input"
+          />
+        </div>
+        <div>
+          <button
+            class="filter-button"
+            id="posts-by-knowledge-area-filter-button"
+          >
+            Buscar
+          </button>
+        </div>
       </div>
       <canvas
         id="posts-by-knowledge-area"
@@ -247,8 +459,36 @@
 
     <div class="graph">
       <div class="graph-title-container">Atividade dos Usuários</div>
+      <div class="filters-container" id="users-activity-filters-container">
+        <div class="text-filter" id="users-activity-country-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu país"
+            id="users-activity-country-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="users-activity-state-filter">
+          <input
+            type="text"
+            placeholder="Digite o seu estado"
+            id="users-activity-state-filter-input"
+          />
+        </div>
+        <div class="text-filter" id="users-activity-city-filter">
+          <input
+            type="text"
+            placeholder="Digite a sua cidade"
+            id="users-activity-city-filter-input"
+          />
+        </div>
+        <div>
+          <button class="filter-button" id="users-activity-filter-button">
+            Buscar
+          </button>
+        </div>
+      </div>
       <canvas
-        id="user-activity"
+        id="users-activity"
         class="line-chart"
         width="60"
         height="25"
@@ -358,10 +598,14 @@
     <script src="api.js"></script>
     <script src="graphs/top-5-users.js"></script>
     <script src="graphs/posts-by-knowledge-area.js"></script>
-    <script src="graphs/group-and-users-evolution.js"></script>
-    <script src="graphs/user-activity.js"></script>
+    <script src="graphs/groups-and-users-evolution.js"></script>
+    <script src="graphs/users-activity.js"></script>
     <script src="graphs/brazil-states.js"></script>
     <script src="graphs/map.js"></script>
     <script src="filters/top-5-users.js"></script>
+    <script src="filters/groups-and-users-evolution.js"></script>
+    <script src="filters/map.js"></script>
+    <script src="filters/posts-by-knowledge-area.js"></script>
+    <script src="filters/users-activity.js"></script>
   </body>
 </html>

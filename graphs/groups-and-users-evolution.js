@@ -1,6 +1,23 @@
-function buildGroupAndUsersGraph(labels, groups, users) {
-  var ctx = document.getElementById("group-and-users-evolution");
-  var chartGraph = new Chart(ctx, {
+let groupsAndUsersChart;
+
+function buildGroupsAndUsersGraph(data) {
+  let labels = [];
+  let groups = [];
+  let users = [];
+
+  data.forEach((v) => {
+    labels.push(v.date);
+    groups.push(v.groups);
+    users.push(v.users);
+  });
+
+  const ctx = document.getElementById("groups-and-users-evolution");
+
+  if (groupsAndUsersChart) {
+    groupsAndUsersChart.destroy();
+  }
+
+  groupsAndUsersChart = new Chart(ctx, {
     type: "line",
     data: {
       labels: labels,
@@ -25,16 +42,6 @@ function buildGroupAndUsersGraph(labels, groups, users) {
 }
 
 (async () => {
-  let labels = [];
-  let groups = [];
-  let users = [];
-
-  var groupsAndUsersResponse = await getGroupsAndUsersEvolution();
-  groupsAndUsersResponse.forEach((v) => {
-    labels.push(v.date);
-    groups.push(v.groups);
-    users.push(v.users);
-  });
-
-  buildGroupAndUsersGraph(labels, groups, users);
+  const data = await getGroupsAndUsersEvolution();
+  buildGroupsAndUsersGraph(data);
 })();
