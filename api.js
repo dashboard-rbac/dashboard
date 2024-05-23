@@ -24,38 +24,38 @@ const TOP_5_USERS_URL = "./api-mocked-responses/top-5-users.json"
 const GROUPS_URL = "./api-mocked-responses/groups.json"
 const USERS_COUNT_BY_STATE_URL = "./api-mocked-responses/users-count-by-state.json"
 
-async function getGroupsAndUsersEvolution() {
-    const response = await fetch(GROUPS_AND_USERS_EVOLUTION_URL);
+async function getGroupsAndUsersEvolution(queryParams = "") {
+    const response = await fetch(GROUPS_AND_USERS_EVOLUTION_URL + queryParams);
     const data = await response.json();
     return data;
 }
 
-async function getPostsByKnowledgeArea() {
-    const response = await fetch(POSTS_BY_KNOWLEDGE_AREA_URL);
+async function getPostsByKnowledgeArea(queryParams = "") {
+    const response = await fetch(POSTS_BY_KNOWLEDGE_AREA_URL + queryParams);
     const data = await response.json();
     return data;
 }
 
-async function getUsersActivity() {
-    const response = await fetch(USERS_ACTIVITY_URL);
+async function getUsersActivity(queryParams = "") {
+    const response = await fetch(USERS_ACTIVITY_URL + queryParams);
     const data = await response.json();
     return data;
 }
 
-async function getGroups() {
-    const response = await fetch(GROUPS_URL);
+async function getGroups(queryParams = "") {
+    const response = await fetch(GROUPS_URL + queryParams);
     const data = await response.json();
     return data;
 }
 
-async function getUsersCountByState() {
-    const response = await fetch(USERS_COUNT_BY_STATE_URL);
+async function getUsersCountByState(queryParams = "") {
+    const response = await fetch(USERS_COUNT_BY_STATE_URL + queryParams);
     const data = await response.json();
     return data;
 }
 
-async function getTop5Evolution() {
-    const response = await fetch(TOP_5_USERS_URL);
+async function getTop5Evolution(queryParams = "") {
+    const response = await fetch(TOP_5_USERS_URL + queryParams);
     const data = await response.json();
     return data;
 }

@@ -1,4 +1,4 @@
-var map = L.map("map").setView([-15, -60], 4);
+var map = L.map("map").setView([-15, -60], 3);
 var maxBounds = [
   [-90, -180],
   [90, 180],
@@ -207,3 +207,7 @@ var maxValue = -1;
     setGroupMarker(v.coordinates, v.name, v.type, v.members);
   });
 })();
+
+function changeMapFocus(coordinates, zoomLevel) {
+  map.setView(coordinates, zoomLevel);
+}

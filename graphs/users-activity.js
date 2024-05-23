@@ -1,6 +1,25 @@
-const buildUsersActivityGraph = (labels, comments, likes, posts) => {
-  var ctx = document.getElementById("user-activity");
-  var chartGraph = new Chart(ctx, {
+let usersActivityChart;
+
+const buildUsersActivityGraph = (data) => {
+  let labels = [];
+  let comments = [];
+  let likes = [];
+  let posts = [];
+
+  data.forEach((v) => {
+    labels.push(v.date);
+    comments.push(v.comments);
+    likes.push(v.likes);
+    posts.push(v.posts);
+  });
+
+  const ctx = document.getElementById("users-activity");
+
+  if (usersActivityChart) {
+    usersActivityChart.destroy();
+  }
+
+  usersActivityChart = new Chart(ctx, {
     type: "bar",
     data: {
       labels: labels,
@@ -32,18 +51,6 @@ const buildUsersActivityGraph = (labels, comments, likes, posts) => {
 };
 
 (async () => {
-  let labels = [];
-  let comments = [];
-  let likes = [];
-  let posts = [];
-
-  var response = await getUsersActivity();
-  response.forEach((v) => {
-    labels.push(v.date);
-    comments.push(v.comments);
-    likes.push(v.likes);
-    posts.push(v.posts);
-  });
-
-  buildUsersActivityGraph(labels, comments, likes, posts);
+  const response = await getUsersActivity();
+  buildUsersActivityGraph(response);
 })();
