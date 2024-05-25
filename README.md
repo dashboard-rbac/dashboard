@@ -33,9 +33,22 @@ O projeto está dividido em raiz e diretórios, sendo eles:
   - **map-icons**: contém as imagens utilizadas nos ícones do mapa.
   - **navbar**: contém as imagens utilizadas na barra de navegação.
 - **openapi**: contém o arquivo **openapi.yaml**.
-- **scripts**:
+- **scripts**: contém os arquivos utilizados no projeto divididos em raiz e diretórios, sendo eles:
+  - **raiz**: **api.js**, **sandwich-menu.js** e **utils.js**.
+  - **graphs**: contém os arquivos utilizados para criar os gráficos divididos nos seguintes arquivos:
+    - **filters**: contém os arquivos utilizados para criar os filtros dos gráficos.
+      - **groups-and-users-evolution.js**: arquivo utilizado para criar os filtros do gráfico de evolução de grupos e usuários.
+      - **map.js**: arquivo utilizado para criar os filtros do mapa de densidade de usuários e localização de grupos relevantes por estado.
+      - **posts-by-knowledge-area.js**: arquivo utilizado para criar os filtros do gráfico de postagens por área de conhecimento.
+      - **top-5-users.js**: arquivo utilizado para criar os filtros da tabela dos 5 usuários mais ativos.
+      - **users-activity.js**: arquivo utilizado para criar os filtros do gráfico de atividade dos usuários.
+    - **brazil-states.js**: contém as coordenadas geográficas dos limites dos estados brasileiros.
+    - **groups-and-users-evolution.js**: arquivo utilizado para criar o gráfico de evolução de grupos e usuários.
+    - **map.js**: arquivo utilizado para criar o mapa de densidade de usuários e localização de grupos relevantes por estado.
+    - **posts-by-knowledge-area.js**: arquivo utilizado para criar o gráfico de postagens por área de conhecimento.
+    - **top-5-users.js**: arquivo utilizado para criar a tabela dos 5 usuários mais ativos.
+    - **users-activity.js**: arquivo utilizado para criar o gráfico de atividade dos usuários.
 - **styles**: contém o arquivo **styles.css**.
-
 
 ## Desenvolvedores
 
