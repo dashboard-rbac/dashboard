@@ -1,29 +1,110 @@
 [
-  { "state": "Acre", "users": 100 },
-  { "state": "Alagoas", "users": 200 },
-  { "state": "Amapá", "users": 150 },
-  { "state": "Amazonas", "users": 300 },
-  { "state": "Bahia", "users": 500 },
-  { "state": "Ceará", "users": 450 },
-  { "state": "Distrito Federal", "users": 700 },
-  { "state": "Espírito Santo", "users": 300 },
-  { "state": "Goiás", "users": 400 },
-  { "state": "Maranhão", "users": 250 },
-  { "state": "Mato Grosso", "users": 350 },
-  { "state": "Mato Grosso do Sul", "users": 300 },
-  { "state": "Minas Gerais", "users": 800 },
-  { "state": "Pará", "users": 400 },
-  { "state": "Paraíba", "users": 200 },
-  { "state": "Paraná", "users": 700 },
-  { "state": "Pernambuco", "users": 500 },
-  { "state": "Piauí", "users": 150 },
-  { "state": "Rio de Janeiro", "users": 900 },
-  { "state": "Rio Grande do Norte", "users": 250 },
-  { "state": "Rio Grande do Sul", "users": 600 },
-  { "state": "Rondônia", "users": 150 },
-  { "state": "Roraima", "users": 100 },
-  { "state": "Santa Catarina", "users": 450 },
-  { "state": "São Paulo", "users": 1200 },
-  { "state": "Sergipe", "users": 150 },
-  { "state": "Tocantins", "users": 200 }
+  {
+    "state": "Acre",
+    "users": 100
+  },
+  {
+    "state": "Alagoas",
+    "users": 200
+  },
+  {
+    "state": "Amapá",
+    "users": 150
+  },
+  {
+    "state": "Amazonas",
+    "users": 300
+  },
+  {
+    "state": "Bahia",
+    "users": 500
+  },
+  {
+    "state": "Ceará",
+    "users": 450
+  },
+  {
+    "state": "Distrito Federal",
+    "users": 700
+  },
+  {
+    "state": "Espírito Santo",
+    "users": 300
+  },
+  {
+    "state": "Goiás",
+    "users": 400
+  },
+  {
+    "state": "Maranhão",
+    "users": 250
+  },
+  {
+    "state": "Mato Grosso",
+    "users": 350
+  },
+  {
+    "state": "Mato Grosso do Sul",
+    "users": 300
+  },
+  {
+    "state": "Minas Gerais",
+    "users": 800
+  },
+  {
+    "state": "Pará",
+    "users": 400
+  },
+  {
+    "state": "Paraíba",
+    "users": 200
+  },
+  {
+    "state": "Paraná",
+    "users": 700
+  },
+  {
+    "state": "Pernambuco",
+    "users": 500
+  },
+  {
+    "state": "Piauí",
+    "users": 150
+  },
+  {
+    "state": "Rio de Janeiro",
+    "users": 900
+  },
+  {
+    "state": "Rio Grande do Norte",
+    "users": 250
+  },
+  {
+    "state": "Rio Grande do Sul",
+    "users": 600
+  },
+  {
+    "state": "Rondônia",
+    "users": 150
+  },
+  {
+    "state": "Roraima",
+    "users": 100
+  },
+  {
+    "state": "Santa Catarina",
+    "users": 450
+  },
+  {
+    "state": "São Paulo",
+    "users": 1200
+  },
+  {
+    "state": "Sergipe",
+    "users": 150
+  },
+  {
+    "state": "Tocantins",
+    "users": 200
+  }
 ]

@@ -1,18 +1,82 @@
 [
-  { "date": "Janeiro - 2023", "users": 1000, "groups": 100 },
-  { "date": "Fevereiro - 2023", "users": 1200, "groups": 120 },
-  { "date": "Março - 2023", "users": 1500, "groups": 150 },
-  { "date": "Abril - 2023", "users": 1800, "groups": 180 },
-  { "date": "Maio - 2023", "users": 2100, "groups": 210 },
-  { "date": "Junho - 2023", "users": 2400, "groups": 240 },
-  { "date": "Julho - 2023", "users": 2700, "groups": 270 },
-  { "date": "Agosto - 2023", "users": 3000, "groups": 300 },
-  { "date": "Setembro - 2023", "users": 3300, "groups": 330 },
-  { "date": "Outubro - 2023", "users": 3600, "groups": 360 },
-  { "date": "Novembro - 2023", "users": 3900, "groups": 390 },
-  { "date": "Dezembro - 2023", "users": 4200, "groups": 420 },
-  { "date": "Janeiro - 2024", "users": 4500, "groups": 450 },
-  { "date": "Fevereiro - 2024", "users": 4800, "groups": 480 },
-  { "date": "Março - 2024", "users": 5100, "groups": 510 },
-  { "date": "Abril - 2024", "users": 5400, "groups": 540 }
+  {
+    "date": "Janeiro - 2023",
+    "users": 1000,
+    "groups": 100
+  },
+  {
+    "date": "Fevereiro - 2023",
+    "users": 1200,
+    "groups": 120
+  },
+  {
+    "date": "Março - 2023",
+    "users": 1500,
+    "groups": 150
+  },
+  {
+    "date": "Abril - 2023",
+    "users": 1800,
+    "groups": 180
+  },
+  {
+    "date": "Maio - 2023",
+    "users": 2100,
+    "groups": 210
+  },
+  {
+    "date": "Junho - 2023",
+    "users": 2400,
+    "groups": 240
+  },
+  {
+    "date": "Julho - 2023",
+    "users": 2700,
+    "groups": 270
+  },
+  {
+    "date": "Agosto - 2023",
+    "users": 3000,
+    "groups": 300
+  },
+  {
+    "date": "Setembro - 2023",
+    "users": 3300,
+    "groups": 330
+  },
+  {
+    "date": "Outubro - 2023",
+    "users": 3600,
+    "groups": 360
+  },
+  {
+    "date": "Novembro - 2023",
+    "users": 3900,
+    "groups": 390
+  },
+  {
+    "date": "Dezembro - 2023",
+    "users": 4200,
+    "groups": 420
+  },
+  {
+    "date": "Janeiro - 2024",
+    "users": 4500,
+    "groups": 450
+  },
+  {
+    "date": "Fevereiro - 2024",
+    "users": 4800,
+    "groups": 480
+  },
+  {
+    "date": "Março - 2024",
+    "users": 5100,
+    "groups": 510
+  },
+  {
+    "date": "Abril - 2024",
+    "users": 5400,
+    "groups": 540
+  }
 ]
