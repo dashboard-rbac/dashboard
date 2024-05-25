@@ -1,5 +1,5 @@
 const postsByKnowledgeAreaButton = document.getElementById(
-  "posts-by-knowledge-area-filter-button"
+    "posts-by-knowledge-area-filter-button"
 );
 
 postsByKnowledgeAreaButton.addEventListener("click", async () => {
@@ -14,7 +14,6 @@ postsByKnowledgeAreaButton.addEventListener("click", async () => {
   ).value;
 
   const form = document.getElementById("posts-by-knowledge-area-bncc-filter-form");
-  const formData = new FormData(form);
   const selectedCompetencies = Array.from(form.querySelectorAll('input[name="bncc-competencies"]:checked'))
       .map(input => input.value);
 

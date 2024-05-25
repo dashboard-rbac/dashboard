@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard - RBAC</title>
 
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
     <link
       rel="stylesheet"
       href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
@@ -35,7 +35,7 @@
         </div>
         <div id="div-block" class="overlay"></div>
         <a href="https://aprendizagemcriativa.org/">
-          <img id="logo" src="images/logo.png" alt="Logo" />
+          <img id="logo" src="images/navbar/logo.png" alt="Logo" />
         </a>
         <nav>
           <ul id="menu">
@@ -133,7 +133,7 @@
       <div id="section-text">
         <div id="title">
           <h1>Dashboard</h1>
-          <img src="images/green_label.png" alt="" />
+          <img src="images/header/green_label.png" alt="" />
         </div>
         <p>
           Nesta página, você encontrará uma variedade de Dashboards informativos
@@ -262,7 +262,7 @@
 
     <div id="map-container" class="graph">
       <div class="graph-title-container">
-        Densididade de Usuários e Localização de Grupos Relevantes por Estado
+        Densidade de Usuários e Localização de Grupos Relevantes por Estado
       </div>
       <div class="filters-container" id="map-filters-container">
         <div class="text-filter" id="map-country-filter">
@@ -554,7 +554,7 @@
       <div id="black-footer" style="background-color: black">
         <img
           id="footer-logo-rbac"
-          src="images/footer_logo.png"
+          src="images/footer/footer_logo.png"
           alt="Logo Aprendizagem Criativa"
         />
         <div id="black-footer-text">
@@ -564,11 +564,11 @@
           por todo o Brasil.
         </div>
         <img
-          id="footer-fundacao"
-          src="images/lemann_1.png"
+          id="footer-lemann-foundation"
+          src="images/footer/lemann_1.png"
           alt="Fundação Lemann"
         />
-        <img id="footer-mit" src="images/mit.png" alt="Mit Media Lab" />
+        <img id="footer-mit" src="images/footer/mit.png" alt="Mit Media Lab" />
       </div>
       <div id="footer-information">
         <p>
@@ -592,20 +592,19 @@
         </p>
       </div>
     </footer>
-    <script src="utils.js"></script>
-    <script src="mobilenav.js"></script>
-    <script src="script.js"></script>
-    <script src="api.js"></script>
-    <script src="graphs/top-5-users.js"></script>
-    <script src="graphs/posts-by-knowledge-area.js"></script>
-    <script src="graphs/groups-and-users-evolution.js"></script>
-    <script src="graphs/users-activity.js"></script>
-    <script src="graphs/brazil-states.js"></script>
-    <script src="graphs/map.js"></script>
-    <script src="filters/top-5-users.js"></script>
-    <script src="filters/groups-and-users-evolution.js"></script>
-    <script src="filters/map.js"></script>
-    <script src="filters/posts-by-knowledge-area.js"></script>
-    <script src="filters/users-activity.js"></script>
+    <script src="scripts/utils.js"></script>
+    <script src="scripts/sandwich-menu.js"></script>
+    <script src="scripts/api.js"></script>
+    <script src="scripts/graphs/top-5-users.js"></script>
+    <script src="scripts/graphs/posts-by-knowledge-area.js"></script>
+    <script src="scripts/graphs/groups-and-users-evolution.js"></script>
+    <script src="scripts/graphs/users-activity.js"></script>
+    <script src="scripts/graphs/brazil-states.js"></script>
+    <script src="scripts/graphs/map.js"></script>
+    <script src="scripts/graphs/filters/top-5-users.js"></script>
+    <script src="scripts/graphs/filters/groups-and-users-evolution.js"></script>
+    <script src="scripts/graphs/filters/map.js"></script>
+    <script src="scripts/graphs/filters/posts-by-knowledge-area.js"></script>
+    <script src="scripts/graphs/filters/users-activity.js"></script>
   </body>
 </html>
