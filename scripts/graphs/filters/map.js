@@ -1,17 +1,17 @@
-const usersActivityButton = document.getElementById("map-filter-button");
+const mapButton = document.getElementById("map-filter-button");
 
 const NOMINATIN_URL = "https://nominatim.openstreetmap.org/search";
 
 async function getCoordinates(query) {
   return fetch(`${NOMINATIN_URL}?${query}&format=json`)
-    .then((response) => response.json())
-    .then((data) => data[0])
-    .then((data) => [data.lat, data.lon]);
+      .then((response) => response.json())
+      .then((data) => data[0])
+      .then((data) => [data.lat, data.lon]);
 }
 
-usersActivityButton.addEventListener("click", async () => {
+mapButton.addEventListener("click", async () => {
   const countryFilter = document.getElementById(
-    "map-country-filter-input"
+      "map-country-filter-input"
   ).value;
   const stateFilter = document.getElementById("map-state-filter-input").value;
   const cityFilter = document.getElementById("map-city-filter-input").value;

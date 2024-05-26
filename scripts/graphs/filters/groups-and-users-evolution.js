@@ -1,5 +1,5 @@
 const groupAndUsersButton = document.getElementById(
-  "groups-and-users-evolution-filter-button"
+    "groups-and-users-evolution-filter-button"
 );
 
 groupAndUsersButton.addEventListener("click", async () => {

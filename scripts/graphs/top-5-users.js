@@ -10,7 +10,7 @@ function buildTable(data) {
     <td class="responsiveness-td">${formatText(person.area)}</td>
     <td class="responsiveness-td">${formatText(person.occupation)}</td>
     <td>${formatText(person.city)}, ${formatText(person.state)}, ${formatText(
-      person.country
+        person.country
     )}</td>
     <td>${formatText(person.group)}</td>
     `;
@@ -28,7 +28,6 @@ function formatText(text) {
 }
 
 (async () => {
-  var response = await getTop5Evolution();
-
+  const response = await getTop5Evolution();
   buildTable(response);
 })();

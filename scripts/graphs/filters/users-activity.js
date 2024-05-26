@@ -1,5 +1,5 @@
 const usersActivityButton = document.getElementById(
-  "users-activity-filter-button"
+    "users-activity-filter-button"
 );
 
 usersActivityButton.addEventListener("click", async () => {
